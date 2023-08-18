@@ -90,6 +90,7 @@ header[role="banner"] {
         font-size: 0.8em;
       }
       .contact {
+        margin-left: 4%;
         li {
           transition: 0.3s;
           &:hover {
@@ -102,14 +103,19 @@ header[role="banner"] {
             }
             // *******************************Animation rebondissement WhatsApp et téléphone sur mobile
             .fa-whatsapp {
+              color: rgb(68, 235, 98);
               @media (max-width: 1000px) {
                 animation: fa-bounce 1s infinite;
               }
             }
             .fa-phone {
+              color: $color-GOLD;
               @media (max-width: 1000px) {
                 animation: fa-shake 1s infinite;
               }
+            }
+            .fa-envelope {
+              color: rgb(41, 170, 226);
             }
           }
         }
@@ -145,7 +151,7 @@ header[role="banner"] {
       }
     }
   }
-  border-bottom: 3px solid $color-BLACK;
+  //   border-bottom: 3px solid $color-BLACK;
 }
 
 // **************************************  ANIMATIONS

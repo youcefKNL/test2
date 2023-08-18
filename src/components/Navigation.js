@@ -58,19 +58,19 @@ const Navigation = () => {
 
             <li>
               <a
-                href="https://wa.me/33601312152"
-                alt="Envoyer un message WhatsApp"
+                href="mailto:legal_formalite@outlook.fr"
+                alt="Envoyer un email"
               >
-                <i class="fa-brands fa-whatsapp "></i>
+                <i class="fa-regular fa-envelope"></i>
               </a>
             </li>
 
             <li>
               <a
-                href="mailto:legal_formalite@outlook.fr"
-                alt="Envoyer un email"
+                href="https://wa.me/33601312152"
+                alt="Envoyer un message WhatsApp"
               >
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-whatsapp "></i>
               </a>
             </li>
           </ul>

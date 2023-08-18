@@ -1,0 +1,43 @@
+section {
+  padding: 2% 5%;
+  h1 {
+    font-size: 1.3em;
+    line-height: 1;
+    margin-bottom: 1%;
+    font-family: $font-1;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  h2 {
+    text-align: center;
+    margin: 3% 0;
+    font-family: $font-1;
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid $color-GOLD;
+      border-radius: 50px;
+      flex: 0 1 25%;
+      padding: 20px 20px;
+      text-align: center;
+      border-radius: 8px;
+      min-width: 150px;
+      box-shadow: 0 1px 6px rgba(51, 51, 51, 0.192);
+      min-height: 250px;
+      display: grid;
+      @media (max-width: 1000px) {
+        width: 150px;
+      }
+    }
+  }
+}
