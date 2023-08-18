@@ -1,0 +1,167 @@
+// **************************************  Styles pour LE COMPOSANTS NAVIGATION / HEADER
+
+header[role="banner"] {
+  padding-block: 1rem;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      min-height: 15vh;
+    }
+    nav {
+      width: 30%;
+      ul {
+        li {
+          p {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .logo {
+      .brand {
+        font-family: $font-1;
+        position: relative;
+        flex-shrink: 0;
+        font-size: clamp(4rem, 6vw, 4rem);
+        text-align: center;
+        color: $color-GOLD;
+        text-decoration: none;
+        line-height: 0.9;
+        animation: slideUpLogo 0.5s linear forwards;
+        letter-spacing: 0.07em;
+
+        &::after {
+          content: "";
+          position: absolute;
+          inset: -1%;
+          background: $color-background;
+          animation: slideUpLogo 1s 0.8s forwards;
+        }
+
+        span {
+          display: block;
+          font-size: 0.5em;
+          letter-spacing: 0.02em;
+          color: $color-GOLD;
+          position: relative;
+          transition: 0.2s;
+
+          // **************************************  TRAIT ENTRE SPAN ET BEFORE
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -10%;
+            width: 100%;
+            height: 0.1em;
+            background-color: $color-GOLD;
+            transition: opacity 0.2s;
+          }
+        }
+      }
+    }
+    .headerRight {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      p {
+        font-size: 0.8em;
+      }
+      .contact {
+        li {
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.2);
+          }
+          a {
+            i {
+              color: $color-GOLD;
+              font-size: 1.5em;
+            }
+            // *******************************Animation rebondissement WhatsApp et téléphone sur mobile
+            .fa-whatsapp {
+              @media (max-width: 1000px) {
+                animation: fa-bounce 1s infinite;
+              }
+            }
+            .fa-phone {
+              @media (max-width: 1000px) {
+                animation: fa-shake 1s infinite;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  a:not(.brand) {
+    // text-transform: uppercase;
+    font-size: 1em;
+    padding: 0 15px;
+    transition: 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $color-GOLD;
+      text-decoration: underline;
+      text-decoration-thickness: 0.1em;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    nav {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 1000px) {
+      align-items: center;
+    }
+    @for $i from 1 through 4 {
+      li:nth-child(#{$i}) a {
+        opacity: 0;
+        display: block;
+        animation: slideDown 0.5s #{$i * 0.1s} linear forwards;
+      }
+    }
+  }
+  border-bottom: 3px solid $color-BLACK;
+}
+
+// **************************************  ANIMATIONS
+
+@keyframes slideUpLogo {
+  from {
+    bottom: 0;
+    transform: skewY(-5deg);
+  }
+  to {
+    bottom: 100%;
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
