@@ -1,5 +1,14 @@
+$icon-create: url("../../assets/emoji3d/3dicon-create-transformed.jpeg");
+$icon-modify: url("../../assets/emoji3d/3dicon-modify-transformed.jpeg");
+$icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
+
 section {
   padding: 2% 5%;
+  .intro {
+    border: 3px solid $color-GOLD;
+    border-radius: 8px;
+    padding: 10px;
+  }
   h1 {
     font-size: 1.3em;
     line-height: 1;
@@ -18,12 +27,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10%;
 
-    div {
+    .card {
+      position: relative;
+      overflow: hidden;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       border: 3px solid $color-GOLD;
       border-radius: 50px;
@@ -38,6 +49,63 @@ section {
       @media (max-width: 1000px) {
         width: 150px;
       }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        // background: linear-gradient(0deg, $color-GOLD 50%, transparent);
+        background: linear-gradient(
+          0deg,
+          rgba(170, 145, 102, 0.9164040616246498) 50%,
+          transparent 100%
+        );
+        bottom: -50%;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        cursor: pointer;
+        &::before {
+          bottom: -20%;
+        }
+        h3 {
+          //   transition: 0.1s;
+          opacity: 0;
+        }
+        .details {
+          display: initial;
+          transition: 2s;
+          z-index: 4;
+        }
+      }
+
+      h3 {
+        font-family: $font-1;
+        text-transform: uppercase;
+        color: $color-BLACK;
+        font-size: 1.5em;
+        z-index: 2;
+        // position: absolute;
+        // bottom: 0;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // width: 100%;
+      }
+      .details {
+        display: none;
+        transition: 2s;
+      }
+    }
+    .createBuisnessCard {
+      background: $icon-create center/cover;
+    }
+    .modifyBuisnessCard {
+      background: $icon-modify center/cover;
+    }
+    .closeBuisnessCard {
+      background: $icon-close center/cover;
     }
   }
 }
