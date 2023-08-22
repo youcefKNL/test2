@@ -59,6 +59,19 @@ const Footer = () => {
           contacter : support@cabinetlegalis.fr ou Yolaw SAS, 50 rue
           d'Hauteville, 75010 Paris, téléphone : 01 76 39 00 60.
         </p>
+        <br />
+        <p>
+          LegalPlace n'est pas un cabinet d'avocats. Conformément à la
+          réglementation en vigueur, LegalPlace fournit uniquement de
+          l'information juridique, un logiciel permettant de générer des
+          documents juridiques sur la base de modèles, un service de formalités
+          d'entreprises et un service de mise en relation avec des
+          professionnels de services aux entreprises. Il est conseillé de faire
+          appel à un avocat pour valider vos documents avant de les utiliser
+          ainsi que pour toute question juridique. Consultez nos conditions
+          générales.
+        </p>
+
         <p>-Cabinet de conseil LEGALIS SASU- © 2023. Tous droits réservés.</p>
       </div>
     </footer>

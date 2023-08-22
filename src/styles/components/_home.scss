@@ -5,7 +5,7 @@ $icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
 section {
   padding: 2% 5%;
   .intro {
-    border: 3px solid $color-GOLD;
+    border: 1px solid $color-GOLD;
     border-radius: 8px;
     padding: 10px;
   }
@@ -22,6 +22,7 @@ section {
   h2 {
     text-align: center;
     margin: 3% 0;
+    margin-top: 5%;
     font-family: $font-1;
   }
   .services {
@@ -37,7 +38,7 @@ section {
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      border: 3px solid $color-GOLD;
+      border: 1px solid $color-GOLD;
       border-radius: 50px;
       flex: 0 1 25%;
       padding: 20px 20px;
