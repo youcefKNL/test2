@@ -1,0 +1,22 @@
+footer {
+  margin-top: 5%;
+  padding: 2% 5%;
+  background: $color-GOLD;
+  .flexList {
+    display: flex;
+    justify-content: space-between;
+    h4 {
+      padding-bottom: 4%;
+    }
+  }
+  .disclaimer {
+    font-size: 0.7em;
+    margin-top: 2%;
+    padding-top: 2%;
+    border-top: 2px solid $color-WHITE;
+    p:nth-child(2) {
+      text-align: center;
+      padding-top: 1%;
+    }
+  }
+}
