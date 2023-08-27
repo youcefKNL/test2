@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
       <div className="flexList">
         <div className="list1">
-          <h4>Services juridiques</h4>
+          <h4>Services</h4>
           <ul>
             <li>Création d’entreprise</li>
             <li>Modification d’entreprise</li>
@@ -18,17 +19,31 @@ const Footer = () => {
           <ul>
             <li>Guides juridiques</li>
             <li>Questions fréquentes</li>
-            <li>Charte avocats</li>
+            <li>Contactez-nous</li>
+            <li>Moyens de paiement</li>
           </ul>
         </div>
         <div className="list3">
-          <h4>ddd</h4>
+          <h4>Légal</h4>
           <ul>
-            <li>Conditions générales</li>
-            <li>Mentions légales</li>
+            <li>
+              <NavLink
+                to="/conditions+generales"
+                title="Consulter les conditions générales"
+              >
+                Conditions générales
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/mentions+legales#mentionsLégales"
+                title="Consulter les  mentions légales"
+              >
+                Mentions légales
+              </NavLink>
+            </li>
             <li>Politique de confidentialité</li>
-            <li>Contactez-nous</li>
-            <li>Moyens de paiement</li>
+            <li>Politique en matière de cookies</li>
           </ul>
         </div>
         <div className="list4">
@@ -46,30 +61,16 @@ const Footer = () => {
       </div>
       <div className="disclaimer">
         <p>
-          Informations importantes sur les services fournis par Legalis :
-          Legalis est développé par Yolaw SAS, RCS Paris n° 753 892 926. Legalis
+          Informations importantes sur les services fournis par Legalis. Legalis
           n'est pas un cabinet d'avocats ni un cabinet d'expertise comptable.
-          Conformément à la réglementation applicable, Legalis permet aux
-          utilisateurs de créer eux-mêmes des actes juridiques à partir de
-          modèles. L'utilisation du service est soumis à nos conditions
-          générales. Conformément au Règlement Général sur la Protection des
-          Données (RGPD), vous disposez d'un droit d'accès aux données
-          personnelles vous concernant et d'un droit de rectification ainsi
-          qu'un droit d'opposition à leur diffusion sur le Site.Pour nous
-          contacter : support@cabinetlegalis.fr ou Yolaw SAS, 50 rue
-          d'Hauteville, 75010 Paris, téléphone : 01 76 39 00 60.
-        </p>
-        <br />
-        <p>
-          LegalPlace n'est pas un cabinet d'avocats. Conformément à la
-          réglementation en vigueur, LegalPlace fournit uniquement de
-          l'information juridique, un logiciel permettant de générer des
-          documents juridiques sur la base de modèles, un service de formalités
-          d'entreprises et un service de mise en relation avec des
-          professionnels de services aux entreprises. Il est conseillé de faire
-          appel à un avocat pour valider vos documents avant de les utiliser
-          ainsi que pour toute question juridique. Consultez nos conditions
-          générales.
+          Conformément à la réglementation applicable, Legalis propose
+          uniquement des informations de nature administrative et permet aux
+          utilisateurs de générer des actes juridiques en utilisant des modèles
+          préétablis. L'utilisation du service est soumis à nos conditions
+          générales.Il est conseillé de faire appel à un avocat pour valider vos
+          documents avant de les utiliser ainsi que pour toute question
+          juridique.L'utilisation du service est soumis à nos conditions
+          générales
         </p>
 
         <p>-Cabinet de conseil LEGALIS SASU- © 2023. Tous droits réservés.</p>

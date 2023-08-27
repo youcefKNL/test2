@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section>
+    <section className="home">
       <div className="intro">
         <h1>
           Simplifiez Vos Démarches Administratives avec Legalis : Expertise et
