@@ -3,26 +3,29 @@ import Collapse from "../components/Collapse";
 
 const ConditionCGV = () => {
   return (
-    <div>
+    <div className="conditionsGenerales">
       <h1>conditions generales</h1>
       <p>
         Toute commande d’une prestation implique de plein droit l’acceptation
         par le Client (mandant) et son mandataire éventuel, des conditions
         générales de vente du Cabinet de Conseil LEGALIS et des conditions
-        particulières détaillées ci-après. ENTRE: La société Cabinet de Conseil
-        LEGALIS, société par actions simplifiée à associé unique au capital de
-        20.556,60 euros, dont le siège social est situé 47, rue Marcel Dassault
-        – 92100 Boulogne-Billancourt, immatriculée au Registre du Commerce et
-        des Sociétés de Nanterre sous le numéro 814 428 785, ci-après la
-        « Société », en sa qualité d’éditeur du site internet legalplace.fr ou
-        de toute déclinaison, sur tout type de plateforme et de support de ce
-        site, y compris sur les sites des Partenaires, le cas échéant, ci-après,
-        individuellement ou collectivement, le « Site », D’une part, ET: Toute
-        personne physique majeure capable, ou toute personne morale, utilisant
-        les Services, tels que définis ci-après, qui sont proposés sur le Site,
-        ci-après le « client », D’autre part,
+        particulières détaillées ci-après.
+        <br />
+        ENTRE: La société Cabinet de Conseil LEGALIS, société par actions
+        simplifiée à associé unique au capital de 1 euros, dont le siège social
+        est situé 9, rue du jasmin pavillon 63 – 91000 Evry, immatriculée au
+        Registre du Commerce et des Sociétés d'Evry sous le numéro 814 428
+        785, ci-après la « Société », en sa qualité d’éditeur du site internet
+        cabinetlegalise.fr ou de toute déclinaison, sur tout type de plateforme
+        et de support de ce site, y compris sur les sites des partenaires, le
+        cas échéant, ci-après, individuellement ou collectivement, le « site »,
+        D’une part,
+        <br />
+        ET: Toute personne physique majeure capable, ou toute personne morale,
+        utilisant les Services, tels que définis ci-après, qui sont proposés sur
+        le site, ci-après le « client », D’autre part:
       </p>
-      <Collapse title="I. DÉFINITIONS">
+      <Collapse title="I. Définitions">
         <p>
           Dans les Conditions Générales, les mots ou expressions définies au
           présent article auront la signification suivante, que ces derniers

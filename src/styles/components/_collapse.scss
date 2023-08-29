@@ -3,7 +3,6 @@
   width: 70%;
   margin: 2% auto;
   user-select: none;
-
   //   @media screen and (min-width: 2400px) {
   //     width: 50%;
   //   }
@@ -27,7 +26,8 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     h3 {
       // font-size: 24px;
-      font-size: 1.5em;
+      font-family: $font-1, serif;
+      font-size: 1.2em;
       font-weight: 500;
       color: $color-WHITE;
       @media screen and (max-width: 800px) {
@@ -43,13 +43,15 @@
   }
 
   .collapse-content {
-    background: $color-WHITE;
+    background: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 5px 5px;
     //font-size: 24px;
     font-size: 1em;
     font-weight: 400;
     padding: 3%;
     color: $color-BLACK;
+    text-align: justify;
     @media screen and (max-width: 800px) {
       font-size: 0.8em;
     }

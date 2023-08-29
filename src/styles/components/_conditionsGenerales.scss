@@ -1,0 +1,15 @@
+.conditionsGenerales {
+  padding: 2% 5%;
+  h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: $font-1;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  p:nth-child(2) {
+    margin: 5% 0;
+  }
+}
