@@ -1,56 +1,239 @@
 /* Styles pour la pop-up de consentement aux cookies */
-.cookie-popup {
+.cookieContainer {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 20px;
-  z-index: 9999;
-}
-
-.cookie-popup p {
-  margin-bottom: 10px;
-}
-
-.cookie-popup-buttons {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond grisé semi-transparent */
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  .cookie-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    padding: 20px;
+    z-index: 9999;
+    .modal1 {
+      h3 {
+        text-align: center;
+        font-family: $font-1, serif;
+      }
+      .decline {
+        margin-top: 2%;
+        font-size: 0.7em;
+        background: transparent;
+        text-decoration: underline;
+        color: blue;
+        padding: 2% 0;
+
+        &:hover {
+          color: #ff0000;
+          border: 2px solid transparent;
+        }
+      }
+      p {
+        font-size: 0.9em;
+
+        margin-top: 3%;
+        a {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .modal2 {
+      * {
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+        }
+      }
+
+      input {
+        height: 20px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 40px;
+      }
+
+      .toggle-wrapper {
+        flex: 1 1 calc(100% / 5);
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+        @media (max-width: 960px) {
+          flex: 1 1 calc(100% / 2);
+        }
+        @media (max-width: 700px) {
+          flex: 1 1 100%;
+        }
+      }
+      /*********************************CHECKBOX TOGGLE*************************************/
+      .toggle {
+        position: relative;
+        display: inline-block;
+      }
+
+      label.toggle-item {
+        width: 50px;
+        background: #2e394d;
+        height: 20px;
+        display: inline-block;
+        border-radius: 50px;
+        margin: 20px;
+        position: relative;
+        transition: all 0.3s ease;
+        transform-origin: 20% center;
+        cursor: pointer;
+        &:before {
+          display: block;
+          transition: all 0.2s ease;
+          width: 2.3em;
+          height: 2.3em;
+          top: 0.25em;
+          left: 0.25em;
+          border-radius: 2em;
+          border: 2px solid #88cf8f;
+          transition: 0.3s ease;
+        }
+      }
+
+      .checkcross {
+        label:before {
+          content: none;
+        }
+        .check {
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          background: #c34a4a; /* Couleur initiale, correspondant au "unchecked" state */
+          transition: 0.4s ease;
+          top: 0px;
+          left: 0px;
+          &:before,
+          &:after {
+            top: -50%;
+            left: -5px;
+            height: 3px;
+            border-radius: 10px;
+            background: $color-WHITE; /* Couleur du trait */
+            transition: 0.4s ease;
+          }
+          &:before {
+            width: 15px;
+            transform: rotate(-45deg) translate(-8px, 18px);
+          }
+          &:after {
+            width: 15px;
+            transform: rotate(45deg) translate(18px, 8px);
+          }
+        }
+      }
+
+      #googleAnalytics:checked + label,
+      #checkcross:checked + label {
+        .check {
+          left: 30px;
+          transform: rotate(360deg);
+          background: #8bc34a; /* Nouvelle couleur, correspondant au "checked" state */
+          &:before {
+            width: 15px;
+            transform: rotate(-45deg) translate(-8px, 20px);
+          }
+          &:after {
+            width: 8px;
+            transform: rotate(45deg) translate(20px, 11px);
+          }
+        }
+      }
+
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      h3 {
+        text-align: center;
+        font-family: $font-1, serif;
+      }
+      p {
+        font-size: 0.9em;
+      }
+    }
+    /**********************************BOUTTONS***************************************/
+    .cookie-popup-buttons {
+      display: flex;
+      width: 100%;
+    }
+
+    .cookie-popup-button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      border: 2px solid transparent;
+      &:hover {
+        background: $color-WHITE;
+        color: green;
+        border: 2px solid $color-GOLD;
+      }
+    }
+
+    .cookie-popup-button.accept {
+      background: $color-GOLD;
+      border: 2px solid $color-GOLD;
+      color: #fff;
+      margin-right: 10px;
+      &:hover {
+        background: $color-WHITE;
+        color: green;
+        border: 2px solid $color-GOLD;
+      }
+    }
+    .back {
+      width: 5%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 2% 0 0 2%;
+      background: transparent;
+      border: 2px solid $color-GOLD;
+      border-radius: 50%;
+      color: $color-GOLD;
+      margin-right: 0;
+      padding: 3px;
+      &:hover {
+        border: 2px solid $color-GOLD;
+        background: $color-GOLD;
+        color: $color-WHITE;
+      }
+    }
+  }
 }
 
-.cookie-popup-button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s, color 0.3s;
-  outline: none;
-}
-
-.cookie-popup-button.accept {
-  background: #ffd819;
-  color: #fff;
-  margin-right: 10px;
-}
-
-.cookie-popup-button.decline {
-  background: #fff;
-  color: #ffd819;
-}
-
-.cookie-popup-button.accept:hover {
-  background: #ffda4b;
-}
-
-.cookie-popup-button.decline:hover {
-  color: #f37a7a;
-}
-
-/* Styles pour le bouton/icône de cookies */
+/**********************************COOKIE ICON***************************************/
 .cookie-icon {
   position: fixed;
   bottom: 20px;
@@ -59,7 +242,7 @@
 }
 
 .cookie-icon button {
-  background: #ffd819;
+  background: $color-GOLD;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -74,6 +257,3 @@
   background: #ffda4b;
   transform: scale(1.1);
 }
-
-/* Autres styles pour le reste de votre application */
-/* ... */
