@@ -64,10 +64,11 @@ function App() {
         <Route path="/conditions+generales" element={<CGV />} />
         <Route path="/mentions+legales" element={<MentionsLegales />} />
         <Route path="/politique+cookies" element={<PolitiqueCookies />} />
-        <Route
+        {/* <Route
           path="/payment+success{CHECKOUT_SESSION_ID}"
           element={<PaymentSucces />}
-        />
+        /> */}
+        <Route path="/payment+success" element={<PaymentSucces />} />
       </Routes>
       <ScrollToAnchor />
       <Footer />
