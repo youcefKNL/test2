@@ -1,120 +1,114 @@
-// import React from "react";
-// import Cookies from "js-cookie";
-// import { NavLink } from "react-router-dom";
-
-// const CookieConsentPopup = ({
-//   showPopup,
-//   setShowPopup,
-//   showCookieConsent, // Recevez l'état showCookieConsent
-//   setShowCookieConsent, // Recevez la fonction de mise à jour de l'état showCookieConsent
-// }) => {
-//   const handleAccept = () => {
-//     Cookies.set("cookies-LEGALIS-Consent", "accepted", { expires: 365 });
-//     setShowPopup(false);
-//     setShowCookieConsent(false); // Mettez à jour l'état showCookieConsent
-//     setShowPopup(false); // Masquer la pop-up après acceptation
-//   };
-
-//   const handleDecline = () => {
-//     Cookies.set("cookies-LEGALIS-Consent", "declined", { expires: 365 });
-//     setShowPopup(false);
-//     setShowCookieConsent(false); // Mettez à jour l'état showCookieConsent
-//     setShowPopup(false); // Masquer la pop-up après refus
-//   };
-//   if (!showPopup) {
-//     return null;
-//   }
-
-//   return (
-//     <div className="cookieContainer">
-//       <div className="cookie-popup">
-//         <h3> Gestion des cookies LEGALIS Cabinet de Conseil</h3>
-//         <button className="cookie-popup-button decline" onClick={handleDecline}>
-//           Continuer sans accepter
-//         </button>
-//         <p>
-//           Nous utilisons des cookies pour optimiser votre expérience utilisateur
-//           et pour améliorer nos contenus. Vous pouvez personnaliser et modifier
-//           vos choix à tout moment.
-//           <br />
-//           <NavLink to="/politique-confidentialite">
-//             Consulter notre politique de confidentialité
-//           </NavLink>
-//         </p>
-
-//         <div className="cookie-popup-buttons">
-//           <button
-//             className="cookie-popup-button decline"
-//             onClick={handleDecline}
-//           >
-//             Refuser
-//           </button>
-//           <button className="cookie-popup-button accept" onClick={handleAccept}>
-//             Accepter
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CookieConsentPopup;
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Cookies from "js-cookie";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faCircleQuestion,
+} from "@fortawesome/free-solid-svg-icons";
+
+//*******************************************************************************************************
 
 const CookieConsentPopup = ({
   showPopup,
   setShowPopup,
-  showCookieConsent,
   setShowCookieConsent,
 }) => {
   const [customizeCookies, setCustomizeCookies] = useState(false);
-  const [googleAnalytics, setGoogleAnalytics] = useState(true);
   const [otherCookies, setOtherCookies] = useState(false);
+  const [googleAnalytics, setGoogleAnalytics] = useState(false);
+  const cookieOptions = {
+    expires: 365,
+    secure: true, // Transmettre uniquement via HTTPS
+    sameSite: "strict", // Limiter le partage des cookies aux requêtes du même site
+    // httpOnly: true, // Empêcher l'accès via JavaScript
+  };
 
+  //************************************Accepter tous les cookie
   const handleAcceptAll = () => {
-    Cookies.set("cookies-LEGALIS-Consent", "accepted", { expires: 365 });
+    // Configurez les options sécurisées pour les cookies
+    Cookies.set(
+      "cookies-LEGALIS-Consent",
+      "All Cookies Accepted",
+      cookieOptions
+    );
     setShowPopup(false);
-    setShowCookieConsent(false);
+    setShowCookieConsent(false); // Masquer la fenêtre contextuelle après acceptation
 
     // Suivi de l'événement d'acceptation de tous les cookies
-    // window.gtag("event", "accept_all_cookies", {
-    //   event_category: "Cookies",
-    // });
+    window.gtag("event", "accept_all_cookies", {
+      event_category: "Cookies",
+    });
   };
+
+  //************************************Continuer sans accepter
   const handleDeclineAll = () => {
-    Cookies.set("cookies-LEGALIS-Consent", "declined", { expires: 365 });
+    Object.keys(Cookies.get()).forEach((cookieName) => {
+      if (cookieName.startsWith("_ga")) {
+        Cookies.remove(cookieName);
+      }
+    }); // Supprimer le cookie Google Analytics
+
+    Cookies.set(
+      "cookies-LEGALIS-Consent",
+      "ALL Cookies declined",
+      cookieOptions
+    );
     setShowPopup(false);
     setShowCookieConsent(false); // Mettez à jour l'état showCookieConsent
     setShowPopup(false); // Masquer la pop-up après refus
+    setGoogleAnalytics(true);
   };
 
   const handleCustomize = () => {
     setCustomizeCookies(true);
   };
 
+  //************************************Personnalisation des Cookies
   const handleFinishCustomizing = () => {
-    Cookies.set("cookies-LEGALIS-Consent", "accepted", { expires: 365 });
-    setShowPopup(false);
-    setShowCookieConsent(false);
+    const googleAnalyticsAccepted = googleAnalytics; // Vérifiez si l'utilisateur a accepté Google Analytics
 
-    // Suivi de l'événement d'acceptation personnalisée des cookies
-    // window.gtag("event", "accept_customized_cookies", {
-    //   event_category: "Cookies",
-    // });
+    if (googleAnalyticsAccepted) {
+      Cookies.set(
+        "cookies-LEGALIS-Consent",
+        "GoogleAnalytics Cookie accepted",
+        cookieOptions
+      );
+      setShowPopup(false);
+      setShowCookieConsent(false);
+      setGoogleAnalytics(true);
+      // Envoyer un événement d'acceptation personnalisée des cookies
+      window.gtag("event", "accept_customized_cookies", {
+        event_category: "Cookies",
+      });
+    } else {
+      Object.keys(Cookies.get()).forEach((cookieName) => {
+        if (cookieName.startsWith("_ga")) {
+          Cookies.remove(cookieName);
+        }
+      }); // Supprimer le cookie Google Analytics
+      Cookies.set(
+        "cookies-LEGALIS-Consent",
+        "GoogleAnalytics Cookie declined",
+        cookieOptions
+      );
+      setShowPopup(false);
+      setShowCookieConsent(false);
+    }
   };
 
   if (!showPopup) {
     return null;
   }
 
+  //*******************************************************************************************************
+
   return (
     <div className="cookieContainer">
       <div className="cookie-popup">
         {customizeCookies ? (
+          //************************************ Modale 2
+
           <div className="modal2">
             <h3>Expérience utilisateur 🤩 </h3>
             <p>
@@ -137,6 +131,10 @@ const CookieConsentPopup = ({
                   <div className="check"></div>
                 </label>
               </div>
+              <span>
+                Permet d'analyser les statistiques de consultation de notre site
+              </span>
+              <FontAwesomeIcon icon={faCircleQuestion} />
               <span className="toggle-label">Google Analytics</span>
             </div>
 
@@ -152,6 +150,7 @@ const CookieConsentPopup = ({
                   <div className="check"></div>
                 </label>
               </div>
+              <span></span>
               <span className="toggle-label">Autres cookies</span>
             </div>
 
@@ -171,6 +170,8 @@ const CookieConsentPopup = ({
             </div>
           </div>
         ) : (
+          //************************************ Modale 1
+
           <div className="modal1">
             <h3>
               🍪 Gestion des cookies 🍪 <br />

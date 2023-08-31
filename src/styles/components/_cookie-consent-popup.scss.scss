@@ -73,7 +73,8 @@
       }
 
       .toggle-wrapper {
-        flex: 1 1 calc(100% / 5);
+        // flex: 1 1 calc(100% / 5);
+        height: 15%;
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
@@ -86,6 +87,10 @@
         @media (max-width: 700px) {
           flex: 1 1 100%;
         }
+        span:nth-child(2) {
+          font-size: 0.7em;
+          width: 30%;
+        }
       }
       /*********************************CHECKBOX TOGGLE*************************************/
       .toggle {
@@ -94,9 +99,9 @@
       }
 
       label.toggle-item {
-        width: 50px;
+        width: 55px;
         background: #2e394d;
-        height: 20px;
+        height: 25px;
         display: inline-block;
         border-radius: 50px;
         margin: 20px;
@@ -128,8 +133,8 @@
           position: absolute;
           background: #c34a4a; /* Couleur initiale, correspondant au "unchecked" state */
           transition: 0.4s ease;
-          top: 0px;
-          left: 0px;
+          top: 2.5px;
+          left: 2.5px;
           &:before,
           &:after {
             top: -50%;
@@ -153,7 +158,7 @@
       #googleAnalytics:checked + label,
       #checkcross:checked + label {
         .check {
-          left: 30px;
+          left: 32px;
           transform: rotate(360deg);
           background: #8bc34a; /* Nouvelle couleur, correspondant au "checked" state */
           &:before {
@@ -174,6 +179,7 @@
       h3 {
         text-align: center;
         font-family: $font-1, serif;
+        margin-bottom: 2%;
       }
       p {
         font-size: 0.9em;
@@ -236,17 +242,18 @@
 /**********************************COOKIE ICON***************************************/
 .cookie-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+  bottom: 2%;
+  left: 2%;
+  border: 2px solid $color-GOLD;
+  border-radius: 57% 43% 73% 27% / 51% 55% 45% 49%;
 }
 
 .cookie-icon button {
-  background: $color-GOLD;
+  background: white;
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 50%;
+  border-radius: 57% 43% 73% 27% / 51% 55% 45% 49%;
   cursor: pointer;
   font-size: 16px;
   outline: none;
@@ -255,5 +262,5 @@
 
 .cookie-icon button:hover {
   background: #ffda4b;
-  transform: scale(1.1);
+  transform: scale(1.3);
 }

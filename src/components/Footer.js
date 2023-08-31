@@ -42,8 +42,23 @@ const Footer = () => {
                 Mentions légales
               </NavLink>
             </li>
-            <li>Politique de confidentialité</li>
-            <li>Politique en matière de cookies</li>
+            <li>
+              <NavLink
+                to="/politique+confidentialité"
+                title="Consulter  la politique de confidentialité"
+              >
+                Politique de confidentialité
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/politique+cookies"
+                title="Consulter  la politique en matière de cookies"
+              >
+                Politique en matière de cookies
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="list4">
