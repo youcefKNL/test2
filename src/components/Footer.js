@@ -44,7 +44,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/politique+confidentialité"
+                to="/politique+confidentialité#h1"
                 title="Consulter  la politique de confidentialité"
               >
                 Politique de confidentialité
@@ -65,12 +65,17 @@ const Footer = () => {
           <h4>À propos</h4>
           <ul>
             <li>
-              Cabinet de Conseil <br />
-              Legalis SASU <br />9 rue du Jasmin <br />
+              📬 Legalis Cabinet de Conseil
+              <br />9 rue du Jasmin <br />
               91000 Evry
             </li>
-            <li>support@cabinetlegalis.fr</li>
-            <li>06 xx xx xx xx</li>
+            <li>
+              {" "}
+              <NavLink to="mailto:support@cabinetlegalis.fr">
+                📧 support@cabinetlegalis.fr
+              </NavLink>
+            </li>
+            <li>📞 06 xx xx xx xx</li>
           </ul>
         </div>
       </div>

@@ -1,5 +1,7 @@
-#mentionsLégales {
+.politiqueCookies {
+  user-select: none;
   margin: 2% 0;
+
   h1 {
     background: $color-GOLD;
     padding: 3%;
@@ -10,14 +12,17 @@
     font-size: 1.5em;
     font-family: $font-1, serif;
   }
-  h2 {
-    font-size: 1em;
-    padding: 0 5%;
-    margin-top: 2%;
+  a {
+    &:hover {
+      color: $color-GOLD;
+    }
   }
   p {
-    color: $color-BLACK;
-    font-size: 0.8em;
     padding: 0 5%;
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  p:nth-child(2) {
+    margin: 5% 0;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,7 @@ import {
   faArrowLeft,
   faCircleQuestion,
 } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/img/logo-Legalis.png";
 
 //*******************************************************************************************************
 
@@ -104,7 +105,7 @@ const CookieConsentPopup = ({
   //*******************************************************************************************************
 
   return (
-    <div className="cookieContainer">
+    <section className="cookieContainer">
       <div className="cookie-popup">
         {customizeCookies ? (
           //************************************ Modale 2
@@ -193,8 +194,9 @@ const CookieConsentPopup = ({
               personnaliser et modifier vos choix à tout moment.
               <br /> Consulter notre &nbsp;
               <NavLink
-                to="/politique-confidentialite"
+                to="/politique+confidentialité"
                 title="Consulter la politique de confidentialité"
+                onClick={() => setShowPopup(false)}
               >
                 politique de confidentialité
               </NavLink>
@@ -228,8 +230,11 @@ const CookieConsentPopup = ({
             </button>
           )}
         </div>
+        <div className="footerPopUp">
+          powered by <img src={Logo} alt="" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

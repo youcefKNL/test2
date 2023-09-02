@@ -1,60 +1,215 @@
-import React from 'react';
+import React from "react";
+import Collapse from "../components/Collapse";
+import { NavLink } from "react-router-dom";
 
 const PolitiqueCookies = () => {
-    return (
-        <section className="politiqueCookies">
-            <h2>POLITIQUE EN MATIÈRE DE COOKIES</h2>
-            <p>La présente politique, la “Politique en matière de cookies”, a pour objet d’informer de manière claire, simple et complète les utilisateurs du présent site, l’”Utilisateur” ou “vous/votre/vos”, sur la manière dont LegalPlace, “LegalPlace” ou “nous”, utilise les cookies sur son site, le “Site”.
+  return (
+    <section className="politiqueCookies">
+      <h1>POLITIQUE EN MATIÈRE DE COOKIES</h1>
+      <p>
+        La présente politique, la "Politique en matière de cookies", a pour
+        objectif de fournir des informations claires, simples et exhaustives aux
+        utilisateurs du site actuel, désignés comme "l'Utilisateur" ou
+        "vous/votre/vos". Elle vise à expliquer comment "Legalis" ou "nous",
+        utilise les cookies sur son site web, appelé ci-après le "Site". Un
+        cookie désigne un ensemble d'informations stockées sur l'appareil de
+        l'Utilisateur lors de sa navigation sur le Site. Le déploiement de
+        cookies publicitaires et/ou de mesure d'audience est soumis à votre
+        consentement. Pour cette raison, un bandeau de cookies est placé en bas
+        de notre site, vous permettant à tout moment d'accepter, de
+        personnaliser ou de refuser l'installation de ces cookies. Vous avez
+        également la possibilité de modifier vos préférences à tout moment en
+        utilisant notre gestionnaire de cookies ou les paramètres de votre
+        navigateur. Quel type de cookies utilisons-nous ? Pour quelles finalités
+        ?
+      </p>
 
-Un cookie est un ensemble d’informations déposées dans le terminal de l’Utilisateur lorsque celui-ci navigue sur le Site.
-
-Le dépôt de cookies publicitaires et/ou de mesure d’audience est soumis à votre consentement, c’est pour cela que vous trouverez en bas de notre site un bandeau cookies qui vous permet à tout moment d’accepter, paramétrer et/ou de refuser le dépôt de ces derniers. Vous avez également la possibilité de changer d’avis à tout moment via le gestionnaire mis à votre disposition ou via votre navigateur.
-
-Quel type de cookies utilisons-nous ? Pour quelles finalités ?</p>
-       <ul><li>Des cookies strictement nécessaires
-
-Ces cookies sont nécessaires pour les opérations propres aux services et aux produits qui sont fournis sur le Site. Ils sont utilisés pour fournir les fonctionnalités basiques du Site, telles que se souvenir des informations qui ont été insérées dans un formulaire. Si vous empêchez l’installation de ces cookies, vous ne pourrez plus utiliser ces fonctionnalités et le Site pourrait ne pas fonctionner de façon efficace.</li>
-       <li>Des cookies de performance
-
-Ces cookies sont utilisés pour collecter des données anonymes à des fins statistiques. Ils nous permettent de mesurer l’audience du Site et d’analyser la façon dont les visiteurs surfent sur le Site (nombre de visiteurs sur le Site, nombre de visites par page, temps passé sur chaque page, localisation des clics…). Ils sont également utilisés pour détecter des problèmes de navigation et toute autre difficulté. Ces cookies nous aident à améliorer notre Site et votre navigation.</li>
-       <li>Des cookies de personnalisation ou de fonctionnalité
-
-Ces cookies sont utilisés pour se souvenir de vos choix, de vos réglages et de vos préférences de contenu sur le Site (comme votre langue, vos choix de personnalisation…) et vous offrir ainsi une expérience de navigation personnalisée en adaptant les contenus du Site pour vous. Si vous refusez ces cookies, nous ne pourrons plus vous offrir certaines fonctionnalités et certaines pages du Site pourraient ne pas fonctionner correctement.</li>
-       <li>Spécificité des cookies de partage
-
-Ces cookies sont spécifiquement liés à l’utilisation des boutons de partage d’une page du Site sur les réseaux sociaux (LinkedIn, etc.). Les boutons de partage vous permettent de directement partager sur le réseau social concerné une page du Site. En cliquant sur le bouton de partage sur le réseau social concerné, un ou plusieurs cookies sont alors déposés sur votre terminal (ordinateur, smartphone, tablette) par le réseau social. Nous n’avons ni accès ni contrôle sur ces cookies de tiers, qui peuvent être des cookies analytiques, de performance ou de ciblage. Nous vous suggérons de consulter les sites internet de ces tiers pour plus d’informations au sujet de leurs cookies et pour savoir comment les gérer.</li>
-       <li>Réglage et blocage des cookies via notre gestionnaire de cookies
-
-La liste des cookies que nous utilisons est consultable via l’outil de gestion que nous avons mis en place. Vous avez la possibilité de les désactiver à tout moment. Néanmoins, nous attirons votre attention sur le fait que certains cookies sont indispensables au bon fonctionnement du Site et qu’il est donc déconseillé de les désactiver.</li>
-       <li>Réglage et blocage des cookies via vos paramètres de navigation
-
-Vous pouvez également contrôler les cookies grâce aux paramètres de votre navigateur. Si la plupart des navigateurs sont paramétrés par défaut et acceptent l’installation de cookies, vous avez la possibilité, si vous le souhaitez, de choisir d’accepter tous les cookies, ou de les rejeter systématiquement ou encore de choisir ceux que vous acceptez selon l’émetteur. Vous pouvez également paramétrer votre navigateur pour accepter ou refuser, au cas par cas, les cookies préalablement à leur installation. Vous pouvez également régulièrement supprimer les cookies de votre terminal via votre navigateur.
-
-L’utilisation de cookies ou de technologies similaires par tout site Internet tiers, fournisseur de contenu publicitaire est soumise à leur propre politique de confidentialité en matière de cookies.
-
-La CNIL (Commission Nationale Informatique et Liberté) propose en téléchargement gratuit, un logiciel de gestion des cookies sur son site Internet : rendez-vous à l’adresse https://www.cnil.fr/vos-droits/vos-traces/les-cookies/ pour en savoir plus.
-
-Pour la gestion des cookies et de vos choix, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide de votre navigateur, qui vous permettra de savoir de quelle manière modifier vos souhaits en matière de cookies.
-
-A titre d’exemple :
-
-Pour Internet Explorer™ : https://windows.microsoft.com/fr-FR/windows-vista/Block-or-allow-cookies
-Pour Safari™ : https://support.apple.com/fr-fr/guide/safari/sfri11471/mac
-Pour Chrome™: https://support.google.com/chrome/bin/answer.py?hl=fr&hlrm=en&answer=95647
-Pour Firefox™ :  https://support.mozilla.org/fr/kb/Activer%20et%20d%C3%A9sactiver%20les%20cookies</li>
-       <li>Paramétrage du système d’exploitation de votre smartphone
-
-Vous avez la possibilité de contrôler le dépôt des cookies sur votre smartphone dans les règles du système d’exploitation.
-
-Sur iOS : https://support.apple.com/fr-fr/HT201265
-
-Sur Android : https://support.google.com/chrome/topic/3434352</li>
-       <li>Gérez vous-même vos préférences cookies sur le Site
-
-                    Lors de votre connexion au Site, vous aurez la possibilité d’effectuer un choix libre et éclairé en matière de dépôt de cookies. Vous pouvez à tout moment changer d’avis en cliquant sur le lien suivant :</li></ul>
-            <p>Date de mise en ligne de la présente politique : 8 novembre 2021</p>
-       </section>
-    );
+      <Collapse
+        title="I. Des cookies strictement nécessaires
+"
+      >
+        <p>
+          Ces cookies sont indispensables pour assurer le bon déroulement des
+          opérations liées aux services et produits offerts sur notre site. Ils
+          sont essentiels pour activer les fonctionnalités de base du site,
+          telles que la mémorisation des informations que vous avez entrées dans
+          un formulaire. En cas de refus de l'installation de ces cookies,
+          certaines de ces fonctionnalités ne seront plus disponibles, ce qui
+          pourrait affecter l'efficacité du site.
+        </p>
+      </Collapse>
+      <Collapse title="II. Des cookies de performance">
+        <p>
+          Ces cookies sont employés pour recueillir des informations anonymes
+          dans un but statistique. Ils nous permettent de quantifier l'audience
+          du Site et d'analyser la manière dont les visiteurs naviguent sur
+          celui-ci, notamment en comptant le nombre de visiteurs par page, en
+          mesurant le temps passé sur chaque page, en identifiant les zones où
+          les visiteurs cliquent, entre autres données. De plus, ces cookies
+          sont utiles pour repérer des problèmes de navigation et d'autres
+          éventuelles difficultés. Ils contribuent ainsi à l'amélioration de
+          notre Site et de votre expérience de navigation.
+        </p>
+      </Collapse>
+      <Collapse title="III. Des cookies de personnalisation ou de fonctionnalité">
+        <p>
+          Ces cookies ont pour fonction de mémoriser vos préférences, paramètres
+          et choix de contenu sur le Site (tels que la langue ou les options de
+          personnalisation). Ils sont conçus pour personnaliser votre expérience
+          de navigation en adaptant les contenus du Site en fonction de vos
+          préférences. Si vous décidez de refuser ces cookies, cela pourrait
+          entraîner la désactivation de certaines fonctionnalités et une
+          éventuelle perturbation du fonctionnement de certaines pages du Site.
+        </p>
+      </Collapse>
+      <Collapse title="IV. Spécificité des cookies de partage">
+        <p>
+          Ces cookies sont spécifiquement associés à l'utilisation des boutons
+          de partage de pages du Site sur les réseaux sociaux tels que LinkedIn,
+          entre autres. Ces boutons de partage vous permettent de partager
+          directement une page du Site sur le réseau social correspondant.
+          Lorsque vous cliquez sur l'un de ces boutons de partage sur un réseau
+          social, un ou plusieurs cookies sont déposés sur votre appareil
+          (ordinateur, smartphone, tablette) par le réseau social en question.
+          Il est important de noter que nous n'avons ni accès ni contrôle sur
+          ces cookies tiers, qui peuvent être de nature analytique, liés à la
+          performance ou au ciblage. Nous vous recommandons de consulter les
+          sites web de ces tiers pour obtenir davantage d'informations sur leurs
+          cookies et pour comprendre comment les gérer.
+        </p>
+      </Collapse>
+      <Collapse
+        title="V. Réglage et blocage des cookies via notre gestionnaire de cookies
+"
+      >
+        <p>
+          La liste complète des cookies que nous utilisons est accessible via
+          notre outil de gestion dédié. Vous avez la liberté de les désactiver à
+          tout moment. Cependant, nous tenons à vous informer que certains de
+          ces cookies sont essentiels pour garantir le bon fonctionnement du
+          Site. Par conséquent, il est fortement déconseillé de les désactiver,
+          car cela pourrait impacter négativement votre expérience de navigation
+          sur le site.
+        </p>
+      </Collapse>
+      <Collapse title="VI. Réglage et blocage des cookies via vos paramètres de navigation">
+        <p>
+          Vous avez également la possibilité de contrôler les cookies en
+          utilisant les paramètres de votre navigateur. Bien que la plupart des
+          navigateurs soient initialement configurés pour accepter les cookies,
+          vous avez le choix de les accepter tous, de les refuser
+          systématiquement, ou encore de sélectionner ceux que vous acceptez en
+          fonction de l'émetteur. De plus, vous pouvez configurer votre
+          navigateur pour accepter ou refuser les cookies de manière sélective
+          avant leur installation. Vous avez également la faculté de supprimer
+          régulièrement les cookies de votre appareil en utilisant les
+          fonctionnalités de votre navigateur. Il est important de noter que
+          l'utilisation de cookies ou de technologies similaires par des sites
+          web tiers ou des fournisseurs de contenu publicitaire est régie par
+          leur propre politique de confidentialité en matière de cookies. <br />{" "}
+          Pour faciliter la gestion des cookies, la CNIL (Commission Nationale
+          Informatique et Liberté) met à votre disposition un logiciel de
+          gestion des cookies que vous pouvez télécharger gratuitement sur son
+          site Internet à l'adresse suivante :
+          https://www.cnil.fr/vos-droits/vos-traces/les-cookies/, &nbsp;
+          <NavLink
+            to="https://www.cnil.fr/vos-droits/vos-traces/les-cookies/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            cliquez ici pour en savoir plus 🔗.
+          </NavLink>
+          <br />
+          Pour la gestion des cookies et la personnalisation de vos préférences,
+          veuillez noter que la configuration de chaque navigateur est unique.
+          Les instructions détaillées pour effectuer ces réglages se trouvent
+          généralement dans le menu d'aide de votre navigateur. Vous y trouverez
+          des informations sur la manière de modifier vos préférences en matière
+          de cookies selon votre choix personnel. N'hésitez pas à consulter le
+          menu d'aide de votre navigateur spécifique pour obtenir des directives
+          précises sur la gestion des cookies. Cela vous permettra de
+          personnaliser votre expérience de navigation conformément à vos
+          préférences en matière de confidentialité. <br /> A titre d’exemple :
+          <ul>
+            <li>
+              {" "}
+              Pour Internet Explorer™ :
+              <NavLink
+                to="https://windows.microsoft.com/fr-FR/windows-vista/Block-or-allow-cookies"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                cliquez ici pour en savoir plus 🔗.
+              </NavLink>
+            </li>
+            <li>
+              Pour Safari™ :
+              <NavLink
+                to="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                cliquez ici pour en savoir plus 🔗.
+              </NavLink>{" "}
+            </li>
+            <li>
+              Pour Chrome™:
+              <NavLink
+                to="https://support.google.com/chrome/bin/answer.py?hl=fr&hlrm=en&answer=95647"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                cliquez ici pour en savoir plus 🔗.
+              </NavLink>{" "}
+            </li>
+            <li>
+              Pour Firefox™ :
+              <NavLink
+                to="https://support.mozilla.org/fr/kb/Activer%20et%20d%C3%A9sactiver%20les%20cookies"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                cliquez ici pour en savoir plus 🔗.
+              </NavLink>{" "}
+            </li>
+          </ul>
+        </p>
+      </Collapse>
+      <Collapse title="VII. Paramétrage du système d’exploitation de votre smartphone">
+        <p>
+          Vous avez la possibilité de contrôler le dépôt des cookies sur votre
+          smartphone dans les règles du système d’exploitation. <br />
+          Sur iOS :
+          <NavLink
+            to="https://support.apple.com/fr-fr/HT201265"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            cliquez ici pour en savoir plus 🔗.
+          </NavLink>{" "}
+          <br />
+          Sur Android :
+          <NavLink
+            to="https://support.google.com/chrome/topic/3434352"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            cliquez ici pour en savoir plus 🔗.
+          </NavLink>{" "}
+        </p>
+      </Collapse>
+      <Collapse title="VIII. Gérez vous-même vos préférences cookies sur le Site">
+        <p>
+          Lorsque vous vous connectez au Site, vous disposerez de la liberté de
+          prendre une décision éclairée concernant l'acceptation ou le rejet des
+          cookies. Vous avez la possibilité de modifier votre choix à tout
+          moment en cliquant sur l'icone cookies 🍪 en bas à gauche de votre
+          écran. <br /> Veuillez noter que cette politique en matière de cookies
+          a été mise en ligne le 1er septembre 2023.
+        </p>
+      </Collapse>
+    </section>
+  );
 };
 
 export default PolitiqueCookies;

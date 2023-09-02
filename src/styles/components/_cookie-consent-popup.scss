@@ -1,4 +1,5 @@
 /* Styles pour la pop-up de consentement aux cookies */
+
 .cookieContainer {
   position: fixed;
   width: 100%;
@@ -6,10 +7,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond grisé semi-transparent */
+  background-color: rgba(0, 0, 0, 0.8); /* Fond grisé semi-transparent */
   z-index: 2;
   top: 0;
   left: 0;
+  // filter: blur(2px);
+  // filter: blur(50px);
+  @media screen and (max-width: 500px) {
+    align-items: flex-end;
+  }
 
   .cookie-popup {
     display: flex;
@@ -18,13 +24,31 @@
     flex-direction: column;
     position: relative;
     width: 500px;
-    height: 300px;
+    min-height: 200px;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
     z-index: 9999;
+    @media screen and (max-width: 500px) {
+      border-radius: 0;
+      border-top: 4px solid $color-GOLD;
+    }
+
+    .footerPopUp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: 0.7em;
+      color: $color-GOLD;
+      user-select: none;
+      margin-top: 10px;
+      img {
+        color: black;
+        width: 70px;
+      }
+    }
     .modal1 {
       h3 {
         text-align: center;
@@ -36,7 +60,7 @@
         background: transparent;
         text-decoration: underline;
         color: blue;
-        padding: 2% 0;
+        padding: 0;
 
         &:hover {
           color: #ff0000;
@@ -46,7 +70,7 @@
       p {
         font-size: 0.9em;
 
-        margin-top: 3%;
+        margin-bottom: 2%;
         a {
           font-weight: bold;
           text-decoration: underline;
@@ -258,6 +282,7 @@
   font-size: 16px;
   outline: none;
   transition: background 0.3s, transform 0.3s;
+  // mix-blend-mode: darken;
 }
 
 .cookie-icon button:hover {

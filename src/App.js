@@ -12,6 +12,7 @@ import Cookies from "js-cookie";
 import { useLocation } from "react-router-dom";
 import CookieIcon from "./components/CookiesComponent";
 import PolitiqueCookies from "./pages/PolitiqueCookies";
+import PolitiqueDeConfidentialite from "./pages/PolitiqueConfidentialté";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -30,6 +31,24 @@ function ScrollToAnchor() {
 }
 
 function App() {
+  useEffect(() => {
+    console.log(
+      "%cBienvenue dans la console ! 🎉",
+      "color: white; background: #FF5733; font-size: 20px; padding: 10px;"
+    );
+    console.log(
+      "%cSi vous êtes ici, vous devez être un·e développeur·se génial·e.",
+      "color: #FF5733; background: white; font-size: 16px; padding: 8px;"
+    );
+    console.log(
+      "%cSi vous avez besoin d'aide pour donner vie à vos projets, contactez-nous à [votre email ou site Web].",
+      "color: white; background: #FF5733; font-size: 16px; padding: 8px;"
+    );
+    console.log(
+      "%cLaissez la magie du code opérer ! 💻✨",
+      "color: white; background: #FF5733; font-size: 20px; padding: 10px;"
+    );
+  }, []);
   const [showCookieConsent, setShowCookieConsent] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -64,6 +83,10 @@ function App() {
         <Route path="/conditions+generales" element={<CGV />} />
         <Route path="/mentions+legales" element={<MentionsLegales />} />
         <Route path="/politique+cookies" element={<PolitiqueCookies />} />
+        <Route
+          path="/politique+confidentialité"
+          element={<PolitiqueDeConfidentialite />}
+        />
         {/* <Route
           path="/payment+success{CHECKOUT_SESSION_ID}"
           element={<PaymentSucces />}
@@ -71,15 +94,15 @@ function App() {
         <Route path="/payment+success" element={<PaymentSucces />} />
       </Routes>
       <ScrollToAnchor />
-      <Footer />
+
       <CookieConsentPopup
         showPopup={showPopup}
         setShowPopup={setShowPopup}
         showCookieConsent={showCookieConsent} // Passez l'état showCookieConsent
         setShowCookieConsent={setShowCookieConsent} // Passez la fonction de mise à jour de l'état showCookieConsent
       />
-
       <CookieIcon showPopup={showPopup} setShowPopup={setShowPopup} />
+      <Footer />
     </BrowserRouter>
   );
 }

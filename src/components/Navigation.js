@@ -39,7 +39,7 @@ const Navigation = () => {
         </nav>
 
         <div className="logo">
-          <a href="index.html" class="brand">
+          <a href="index.html" className="brand">
             LEGALIS<span>Cabinet de Conseil</span>
           </a>
         </div>
@@ -49,10 +49,10 @@ const Navigation = () => {
             Nous contacter : <br />
             Assistance 7j/7 24h/24
           </p>
-          <ul class="contact">
+          <ul className="contact">
             <li>
               <a href="tel:0601312152" alt="Appeler">
-                <i class="fa-solid fa-phone "></i>
+                <i className="fa-solid fa-phone "></i>
               </a>
             </li>
 
@@ -61,7 +61,7 @@ const Navigation = () => {
                 href="mailto:legal_formalite@outlook.fr"
                 alt="Envoyer un email"
               >
-                <i class="fa-regular fa-envelope"></i>
+                <i className="fa-regular fa-envelope"></i>
               </a>
             </li>
 
@@ -70,7 +70,7 @@ const Navigation = () => {
                 href="https://wa.me/33601312152"
                 alt="Envoyer un message WhatsApp"
               >
-                <i class="fa-brands fa-whatsapp "></i>
+                <i className="fa-brands fa-whatsapp "></i>
               </a>
             </li>
           </ul>

@@ -3,7 +3,7 @@ import Collapse from "../components/Collapse";
 
 const ConditionCGV = () => {
   return (
-    <div className="conditionsGenerales">
+    <section className="conditionsGenerales">
       <h1>conditions generales</h1>
       <p>
         Toute commande d’une prestation implique de plein droit l’acceptation
@@ -545,7 +545,7 @@ const ConditionCGV = () => {
         d'échec de la conciliation, le différend relèvera de la compétence
         exclusive des juridictions de Paris (France).
       </Collapse>
-    </div>
+    </section>
   );
 };
 
