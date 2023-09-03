@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 import CookieIcon from "./components/CookiesComponent";
 import PolitiqueCookies from "./pages/PolitiqueCookies";
 import PolitiqueDeConfidentialite from "./pages/PolitiqueConfidentialté";
+import MouseEffect from "./components/MouseEffect";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -77,6 +78,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <MouseEffect />
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />

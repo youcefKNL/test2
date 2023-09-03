@@ -36,6 +36,12 @@ header[role="banner"] {
     }
 
     .logo {
+      display: flex;
+      img {
+        width: 80px;
+        background: white;
+        padding-right: 10px;
+      }
       .brand {
         font-family: $font-1;
         position: relative;

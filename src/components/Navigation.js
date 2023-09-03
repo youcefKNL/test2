@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/logo-Legalis2-removebg-preview.png";
 
 const Navigation = () => {
   return (
@@ -39,6 +40,7 @@ const Navigation = () => {
         </nav>
 
         <div className="logo">
+          <img src={Logo} alt="" />
           <a href="index.html" className="brand">
             LEGALIS<span>Cabinet de Conseil</span>
           </a>
