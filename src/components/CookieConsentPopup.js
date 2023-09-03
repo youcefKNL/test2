@@ -138,7 +138,7 @@ const CookieConsentPopup = ({
               <FontAwesomeIcon icon={faCircleQuestion} />
               <span className="toggle-label">Google Analytics</span>
             </div>
-
+            {/* 
             <div className="toggle-wrapper">
               <div className="toggle checkcross">
                 <input
@@ -153,7 +153,7 @@ const CookieConsentPopup = ({
               </div>
               <span></span>
               <span className="toggle-label">Autres cookies</span>
-            </div>
+            </div> */}
 
             <div className="cookie-popup-buttons">
               <button
