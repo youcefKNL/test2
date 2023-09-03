@@ -1,11 +1,15 @@
 @import "./settings";
+
+// ******************************* Styles Pages
+@import "./pages/home";
+@import "./pages/politiqueConfidentialité";
+@import "./pages/politiqueCookie";
+@import "./pages/mentionsLegales";
+@import "./pages/conditionsGenerales";
+@import "./pages/paymentSucess";
+
+// ******************************* Styles Component
 @import "./components/navigation";
 @import "./components/footer";
-@import "./components/home";
-@import "./components/mentionsLegales";
 @import "./components/collapse";
-@import "./components/conditionsGenerales";
-@import "./components/paymentSucess";
 @import "./components/cookie-consent-popup.scss";
-@import "./components/politiqueConfidentialité";
-@import "./components/politiqueCookie";

@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
@@ -27,25 +29,31 @@ const Home = () => {
         <div className="card createBuisnessCard">
           <h3>Créer mon entreprise</h3>
           <div className="details">
-            <ul>
+            {/* <ul>
               <li>Personne physique</li>
               <li>Personne morale </li>
               Contactez-nous
-            </ul>
+            </ul> */}
+            En savoir plus &nbsp;
+            <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
         </div>
         <div className="card modifyBuisnessCard">
           <h3>Modifier mes statuts</h3>
           <div className="details">
-            Formalités modificatives statutaires et/ou non statutaires.
-            Contactez-nous
+            {/* Formalités modificatives statutaires et/ou non statutaires.
+            Contactez-nous */}
+            En savoir plus &nbsp;
+            <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
         </div>
         <div className="card closeBuisnessCard">
           <h3>Fermer mon entreprise</h3>
           <div className="details">
-            Radiation par clôture de liquidation,par transmission universelle du
-            patrimoine... Contactez-nous
+            {/* Radiation par clôture de liquidation,par transmission universelle du
+            patrimoine... Contactez-nous */}
+            En savoir plus &nbsp;
+            <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
         </div>
       </div>

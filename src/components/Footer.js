@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/img/logo-Legalis2.png";
 
 const Footer = () => {
   return (
     <footer>
       <div className="flexList">
         <div className="list1">
-          <h4>Services</h4>
+          <h4>💼 Services</h4>
           <ul>
             <li>Création d’entreprise</li>
             <li>Modification d’entreprise</li>
@@ -15,7 +16,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="list2">
-          <h4>Liens utiles</h4>
+          <h4>🔗 Liens utiles</h4>
           <ul>
             <li>Guides juridiques</li>
             <li>Questions fréquentes</li>
@@ -24,7 +25,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="list3">
-          <h4>Légal</h4>
+          <h4>⚖️ Légal</h4>
           <ul>
             <li>
               <NavLink
@@ -62,17 +63,18 @@ const Footer = () => {
           </ul>
         </div>
         <div className="list4">
-          <h4>À propos</h4>
+          <h4>ℹ️ À propos</h4>
           <ul>
             <li>
               📬 Legalis Cabinet de Conseil
-              <br />9 rue du Jasmin <br />
-              91000 Evry
+              <br /> &nbsp; &nbsp;&nbsp; 9 rue du Jasmin
+              <br />
+              &nbsp; &nbsp;&nbsp; 91000 Évry-Courcouronnes
             </li>
             <li>
-              {" "}
+              📧&nbsp;
               <NavLink to="mailto:support@cabinetlegalis.fr">
-                📧 support@cabinetlegalis.fr
+                support@cabinetlegalis.fr
               </NavLink>
             </li>
             <li>📞 06 xx xx xx xx</li>
@@ -93,7 +95,12 @@ const Footer = () => {
           générales
         </p>
 
-        <p>-Cabinet de conseil LEGALIS SASU- © 2023. Tous droits réservés.</p>
+        <p>
+          -Cabinet de conseil LEGALIS SASU- © 2023. Tous droits réservés.{" "}
+          <span className="poweredLegalis">
+            powered by <img src={Logo} alt="" />
+          </span>
+        </p>
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const PaymentSuccess = () => {
   return (
-    <div className="paymentSuccesContainer">
+    <section className="paymentSuccesContainer">
       {/* Conteneur pour les confettis */}
       <div className="wrapper">
         {Array.from({ length: 150 }, (_, i) => (
@@ -141,7 +141,7 @@ const PaymentSuccess = () => {
 
       {/* Conteneur pour les confettis */}
       <div className="confetti-container"></div>
-    </div>
+    </section>
   );
 };
 

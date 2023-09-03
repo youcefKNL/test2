@@ -434,7 +434,7 @@ const PolitiqueDeConfidentialite = () => {
           Si vous avez des questions, des préoccupations ou des demandes
           concernant cette Politique de Confidentialité ou le traitement de vos
           Données à caractère personnel, veuillez nous contacter à l'adresse
-          suivante : Contactez-nous à l'adresse :{" "}
+          suivante :{" "}
           <NavLink to="mailto:support@cabinetlegalis.fr">
             📧 support@cabinetlegalis.fr
           </NavLink>

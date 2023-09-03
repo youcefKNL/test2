@@ -3,6 +3,7 @@ $icon-modify: url("../../assets/emoji3d/3dicon-modify-transformed.jpeg");
 $icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
 
 .home {
+  user-select: none;
   padding: 2% 5%;
   .intro {
     border: 1px solid $color-GOLD;
@@ -18,6 +19,8 @@ $icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
   p {
     font-size: 0.9em;
     color: rgb(138, 137, 137);
+    margin: 0;
+    padding: 0;
   }
   h2 {
     text-align: center;
@@ -70,16 +73,23 @@ $icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
       &:hover {
         cursor: pointer;
         &::before {
-          bottom: -20%;
+          transition: 0.3s;
+          bottom: -30%;
         }
         h3 {
-          //   transition: 0.1s;
-          opacity: 0;
+          transition: 0.3s;
+          // opacity: 0;
+          bottom: 20%;
+          text-decoration: underline;
+          color: white;
         }
         .details {
-          display: initial;
-          transition: 2s;
+          opacity: 1;
+          transition: 0.6s;
           z-index: 4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -87,17 +97,18 @@ $icon-close: url("../../assets/emoji3d/3dicon-close-transformed.jpeg");
         font-family: $font-1;
         text-transform: uppercase;
         color: $color-BLACK;
-        font-size: 1.5em;
-        z-index: 2;
-        // position: absolute;
-        // bottom: 0;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // width: 100%;
+        font-size: 1.3em;
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
       }
       .details {
-        display: none;
-        transition: 2s;
+        opacity: 0;
+        font-size: 1.5em;
       }
     }
     .createBuisnessCard {

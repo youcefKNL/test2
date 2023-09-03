@@ -45,6 +45,12 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   //   #root {
   //     min-height: 100%;
   //     display: flex;

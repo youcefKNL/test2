@@ -4,8 +4,8 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import CGV from "./pages/ConditionsGenerales";
-import MentionsLegales from "./components/MentionsLegales";
-import PaymentSucces from "./components/PaymentSucess";
+import MentionsLegales from "./pages/MentionsLegales";
+import PaymentSucces from "./pages/PaymentSucess";
 import CookieConsentPopup from "./components/CookieConsentPopup";
 import Cookies from "js-cookie";
 
@@ -34,19 +34,19 @@ function App() {
   useEffect(() => {
     console.log(
       "%cBienvenue dans la console ! 🎉",
-      "color: white; background: #FF5733; font-size: 20px; padding: 10px;"
+      "color: gold; background: black; font-size: 20px; padding: 10px;"
     );
     console.log(
       "%cSi vous êtes ici, vous devez être un·e développeur·se génial·e.",
-      "color: #FF5733; background: white; font-size: 16px; padding: 8px;"
+      "color: black; background: gold; font-size: 16px; padding: 8px;"
     );
     console.log(
       "%cSi vous avez besoin d'aide pour donner vie à vos projets, contactez-nous à [votre email ou site Web].",
-      "color: white; background: #FF5733; font-size: 16px; padding: 8px;"
+      "color: gold; background: black; font-size: 16px; padding: 8px;"
     );
     console.log(
       "%cLaissez la magie du code opérer ! 💻✨",
-      "color: white; background: #FF5733; font-size: 20px; padding: 10px;"
+      "color: gold; background: black; font-size: 20px; padding: 10px;"
     );
   }, []);
   const [showCookieConsent, setShowCookieConsent] = useState(true);
