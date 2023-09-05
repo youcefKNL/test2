@@ -16,7 +16,7 @@ const CookieConsentPopup = ({
   setShowCookieConsent,
 }) => {
   const [customizeCookies, setCustomizeCookies] = useState(false);
-  const [otherCookies, setOtherCookies] = useState(false);
+  // const [otherCookies, setOtherCookies] = useState(false);
   const [googleAnalytics, setGoogleAnalytics] = useState(false);
   const cookieOptions = {
     expires: 365,
