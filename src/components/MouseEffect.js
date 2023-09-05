@@ -24,6 +24,37 @@
 // }
 
 // export default MouseEffect;
+
+// import React, { useEffect, useState } from "react";
+
+// function MouseEffect() {
+//   const [mousePosition, setMousePosition] = useState({ top: 0, left: 0 });
+
+//   useEffect(() => {
+//     const handleMouseMove = (e) => {
+//       setMousePosition({
+//         top: e.clientY + window.scrollY,
+//         left: e.clientX + window.scrollX,
+//       });
+//     };
+
+//     window.addEventListener("mousemove", handleMouseMove);
+
+//     return () => {
+//       window.removeEventListener("mousemove", handleMouseMove);
+//     };
+//   }, []);
+
+//   return (
+//     <div
+//       className="mouse"
+//       style={{ top: mousePosition.top + "px", left: mousePosition.left + "px" }}
+//     ></div>
+//   );
+// }
+
+// export default MouseEffect;
+
 import React, { useEffect, useState } from "react";
 
 function MouseEffect() {
@@ -37,10 +68,21 @@ function MouseEffect() {
       });
     };
 
+    const handleTouchMove = (e) => {
+      // Obtenir la position du premier doigt en mouvement
+      const touch = e.touches[0];
+      setMousePosition({
+        top: touch.clientY + window.scrollY,
+        left: touch.clientX + window.scrollX,
+      });
+    };
+
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
   }, []);
 

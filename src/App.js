@@ -14,6 +14,7 @@ import CookieIcon from "./components/CookiesComponent";
 import PolitiqueCookies from "./pages/PolitiqueCookies";
 import PolitiqueDeConfidentialite from "./pages/PolitiqueConfidentialté";
 import MouseEffect from "./components/MouseEffect";
+import Tarifs from "./pages/Tarifs";
 
 function ScrollToAnchor() {
   const location = useLocation();
@@ -93,6 +94,7 @@ function App() {
           path="/payment+success{CHECKOUT_SESSION_ID}"
           element={<PaymentSucces />}
         /> */}
+        <Route path="/tarifs" element={<Tarifs />} />
         <Route path="/payment+success" element={<PaymentSucces />} />
       </Routes>
       <ScrollToAnchor />
