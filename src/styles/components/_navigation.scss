@@ -1,14 +1,14 @@
 // **************************************  Styles pour LE COMPOSANTS NAVIGATION / HEADER
 
 header[role="banner"] {
-  padding-block: 1rem;
-  // margin-bottom: 5%;
+  // padding-block: 2rem;
+  padding-top: 1%;
 
   .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-inline: 2rem;
 
     @media (max-width: 1000px) {
@@ -36,9 +36,16 @@ header[role="banner"] {
     }
 
     .logo {
-      display: flex;
+      // display: flex;
+      position: relative;
+      margin-top: 2.5em;
+      z-index: -1;
       img {
-        width: 80px;
+        position: absolute;
+        top: -80%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 85px;
         background: white;
         padding-right: 10px;
       }
@@ -53,6 +60,7 @@ header[role="banner"] {
         line-height: 0.9;
         animation: slideUpLogo 0.5s linear forwards;
         letter-spacing: 0.07em;
+        padding-top: 100px;
 
         &::after {
           content: "";

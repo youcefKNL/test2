@@ -3,6 +3,7 @@ footer {
   padding: 2% 5% 1% 5%;
   border-radius: 10px 10px 0 0;
   background: $color-GOLD;
+  z-index: 1;
   .flexList {
     display: flex;
     justify-content: space-between;

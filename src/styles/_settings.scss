@@ -78,3 +78,25 @@ a:visited {
 //   @include verticalCenter;
 //   flex-direction: column;
 // }
+// mouse-effect.scss
+
+// Classes
+.mouse {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../assets/logo-Legalis2-removebg-preview.png") center/cover;
+  transform: translate(20%, 20%);
+  animation: rotate 15s linear infinite;
+}
+
+// Keyframes pour la rotation
+@keyframes rotate {
+  0% {
+    transform: translate(20%, 20%) rotate(0deg);
+  }
+  100% {
+    transform: translate(20%, 20%) rotate(360deg);
+  }
+}
