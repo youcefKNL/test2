@@ -11,7 +11,7 @@ const Navigation = () => {
       if (window.scrollY < lastScroll) {
         contactElement.style.top = "0";
       } else {
-        contactElement.style.top = "-10vh";
+        contactElement.style.top = "-60px";
       }
       setLastScroll(window.scrollY);
     };
