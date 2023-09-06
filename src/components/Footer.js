@@ -88,9 +88,8 @@ const Footer = () => {
           Conformément à la réglementation applicable, Legalis propose
           uniquement des informations de nature administrative et permet aux
           utilisateurs de générer des actes juridiques en utilisant des modèles
-          préétablis. L'utilisation du service est soumis à nos conditions
-          générales.Il est conseillé de faire appel à un avocat pour valider vos
-          documents avant de les utiliser ainsi que pour toute question
+          préétablis.Il est conseillé de faire appel à un avocat pour valider
+          vos documents avant de les utiliser ainsi que pour toute question
           juridique.L'utilisation du service est soumis à nos conditions
           générales
         </p>
