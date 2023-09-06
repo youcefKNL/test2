@@ -9,24 +9,35 @@ header[role="banner"] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-inline: 2rem;
+    // padding-inline: 2rem;
 
     @media (max-width: 1000px) {
-      flex-direction: column;
+      // flex-direction: column;
       align-items: center;
-      //   flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      margin-top: 10vh;
       //   min-height: 15vh;
     }
     nav {
       width: 30%;
       @media (max-width: 1000px) {
         width: 100%;
-        ul {
+        .linkPage {
           justify-content: center;
           margin-bottom: 5%;
         }
       }
-      ul {
+      .linkPage {
+        @media (max-width: 1000px) {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          // background: red;
+          margin: 5% 1%;
+          padding: 5px;
+          border: 1px solid $color-GOLD;
+          border-radius: 10px;
+        }
         li {
           p {
             font-weight: 400;
@@ -107,6 +118,24 @@ header[role="banner"] {
       }
       .contact {
         margin-left: 4%;
+        @media (max-width: 1000px) {
+          margin-left: 0;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 10vh;
+          justify-content: space-between;
+          background: white;
+          z-index: 10;
+          margin-left: 0;
+          padding: 0 5px;
+          border-bottom: 4px solid $color-GOLD;
+          transition: 0.3s;
+          p {
+            font-size: 0.8em;
+          }
+        }
         li {
           transition: 0.3s;
           &:hover {

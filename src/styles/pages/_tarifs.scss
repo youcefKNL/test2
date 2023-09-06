@@ -1,0 +1,52 @@
+.tarifs {
+  user-select: none;
+  margin: 2% 0 6% 0;
+  h1 {
+    background: $color-GOLD;
+    padding: 3%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: $font-1, serif;
+  }
+  p {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    text-align: justify;
+  }
+  .cardPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      padding: 2% 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 1%;
+      .price {
+      }
+    }
+
+    .card {
+      min-width: 800px;
+    }
+
+    .creationEntreprise {
+      h2 {
+      }
+    }
+    .modificationStatuts {
+      h2 {
+      }
+    }
+    .Dissolution-liquidation {
+      h2 {
+      }
+    }
+  }
+}
