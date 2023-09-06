@@ -14,11 +14,27 @@
       font-size: 1em;
     }
   }
-  p {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 3%;
-    text-align: justify;
+  .tarifsIntro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 10%;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      border: 2px solid $color-GOLD;
+      margin: 20px;
+      animation: floater 2s infinite;
+    }
+
+    p {
+      margin: 0 auto;
+      margin-bottom: 3%;
+      text-align: justify;
+    }
   }
   .cardPrice {
     display: flex;
@@ -27,11 +43,12 @@
     background: #aa895029;
     border-radius: 20px;
     margin: 0 10%;
-    padding: 5% 2%;
+    padding: 0 0 5% 0;
 
     h2 {
-      padding: 2% 0;
+      padding: 2% 2%;
       font-family: $font-1;
+      background: $color-GOLD;
 
       @media (max-width: 1000px) {
         padding: 5% 0;
@@ -41,7 +58,7 @@
     li {
       display: flex;
       justify-content: space-between;
-      padding: 1%;
+      padding: 2% 5%;
       .title {
         font-weight: bold;
       }
@@ -61,6 +78,7 @@
 
     .creationEntreprise {
       h2 {
+        border-radius: 20px 20px 0 0;
       }
     }
     .modificationStatuts {
@@ -71,5 +89,14 @@
       h2 {
       }
     }
+  }
+}
+@keyframes floater {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
   }
 }

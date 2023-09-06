@@ -1,19 +1,23 @@
 import React from "react";
+import ServiceClientIcon3d from "../assets/emoji3d/service-client.png";
 
 const Tarifs = () => {
   return (
     <section className="tarifs">
       <h1>Tarification : création et gestion de société</h1>
-      <p>
-        "Nous sommes fiers de proposer les prix les plus compétitifs du marché,,
-        car nous reconnaissons que certains dossiers peuvent être plus complexes
-        que d'autres. C'est pourquoi nous mentionnons 'à partir de' dans nos
-        tarifs pour refléter la nature variable de certaines prestations
-        administratives, car chaque dossier peut présenter des besoins
-        spécifiques avec une transparence totale. Nos frais administratifs sont
-        strictement basés sur les coûts réels supportés par l'administration
-        publique, sans aucun gonflement artificiel."
-      </p>
+      <div className="tarifsIntro">
+        <img src={ServiceClientIcon3d} alt="" />
+        <p>
+          "Nous sommes fiers de proposer les prix les plus compétitifs du
+          marché,, car nous reconnaissons que certains dossiers peuvent être
+          plus complexes que d'autres. C'est pourquoi nous mentionnons 'à partir
+          de' dans nos tarifs pour refléter la nature variable de certaines
+          prestations administratives, car chaque dossier peut présenter des
+          besoins spécifiques avec une transparence totale. Nos frais
+          administratifs sont strictement basés sur les coûts réels supportés
+          par l'administration publique, sans aucun gonflement artificiel."
+        </p>
+      </div>
       <div className="cardPrice">
         <div className="creationEntreprise card">
           <h2>✒️ Création d’entreprise</h2>
