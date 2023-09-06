@@ -50,13 +50,13 @@ header[role="banner"] {
       position: relative;
       margin-top: 2.5em;
       z-index: -1;
-      img {
+      .logoLegalis {
         position: absolute;
         top: -80%;
         left: 50%;
         transform: translate(-50%);
         width: 85px;
-        background: white;
+        background: transparent;
         padding-right: 10px;
       }
       .brand {

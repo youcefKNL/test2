@@ -10,6 +10,9 @@
     text-transform: uppercase;
     font-size: 1.5em;
     font-family: $font-1, serif;
+    @media (max-width: 1000px) {
+      font-size: 1em;
+    }
   }
   p {
     width: 70%;
@@ -21,19 +24,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #aa895029;
+    border-radius: 20px;
+    margin: 0 10%;
+    padding: 5% 2%;
+
     h2 {
       padding: 2% 0;
+      @media (max-width: 1000px) {
+        padding: 5% 0;
+      }
     }
     li {
       display: flex;
       justify-content: space-between;
       padding: 1%;
+
       .price {
+      }
+
+      @media (max-width: 1000px) {
+        font-size: 0.7em;
       }
     }
 
     .card {
-      min-width: 800px;
+      width: 100%;
     }
 
     .creationEntreprise {

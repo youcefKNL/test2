@@ -16,7 +16,7 @@ const Tarifs = () => {
       </p>
       <div className="cardPrice">
         <div className="creationEntreprise card">
-          <h2>Création d’entreprise</h2>
+          <h2>✒️ Création d’entreprise</h2>
           <ul>
             <li>
               <span className="title">Création d’Auto-Entreprise</span>
@@ -81,7 +81,7 @@ const Tarifs = () => {
           </ul>
         </div>
         <div className="modificationStatuts card">
-          <h2>Modification de statuts</h2>
+          <h2>📑 Modification de statuts</h2>
           <ul>
             <li>
               <span className="title">Changement de siège social</span>
@@ -132,7 +132,7 @@ const Tarifs = () => {
           </ul>
         </div>
         <div className="Dissolution-liquidation card">
-          <h2>Dissolution-liquidation</h2>
+          <h2>🔒 Dissolution-liquidation</h2>
           <li>
             <span className="title">Dissolution de SAS-SASU</span>
             <span className="price">

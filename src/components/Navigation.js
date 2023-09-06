@@ -59,7 +59,7 @@ const Navigation = () => {
         </nav>
 
         <div className="logo">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" className="logoLegalis" />
           <a href="index.html" className="brand">
             LEGALIS<span>Cabinet de Conseil</span>
           </a>
