@@ -28,12 +28,10 @@ const Home = () => {
       <h2>Sérénité administrative: votre parcours pris en charge de A à Z </h2>
       <div className="services">
         <NavLink to="/creer+entreprise" className="card createBuisnessCard">
-          <div>
-            <h3>Créer mon entreprise</h3>
-            <div className="details">
-              En savoir plus &nbsp;
-              <FontAwesomeIcon icon={faAnglesRight} shake />
-            </div>
+          <h3>Créer mon entreprise</h3>
+          <div className="details">
+            En savoir plus &nbsp;
+            <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
         </NavLink>
         <div className="card modifyBuisnessCard">
