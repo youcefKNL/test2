@@ -7,8 +7,8 @@ import {
   faCircleQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../assets/img/logo-Legalis.png";
-
-//*******************************************************************************************************
+import CookieIcon3d from "../assets/emoji3d/cookie-icon2.png";
+import CheckIcon3d from "../assets/emoji3d/check-icon.png";
 
 const CookieConsentPopup = ({
   showPopup,
@@ -16,39 +16,64 @@ const CookieConsentPopup = ({
   setShowCookieConsent,
 }) => {
   const [customizeCookies, setCustomizeCookies] = useState(false);
-  // const [otherCookies, setOtherCookies] = useState(false);
   const [googleAnalytics, setGoogleAnalytics] = useState(false);
   const cookieOptions = {
     expires: 365,
-    secure: true, // Transmettre uniquement via HTTPS
-    sameSite: "strict", // Limiter le partage des cookies aux requêtes du même site
-    // httpOnly: true, // Empêcher l'accès via JavaScript
+    secure: true,
+    sameSite: "strict",
   };
 
-  //************************************Accepter tous les cookie
+  //********************************************************Script Google Tag
+  // useEffect(() => {
+  //   const consent = Cookies.get("cookies-LEGALIS-Consent");
+
+  //   if (consent === "All Cookies Accepted") {
+  //     setShowPopup(false);
+  //     setShowCookieConsent(false);
+  //     loadGoogleTag();
+  //   }
+  // }, [setShowPopup, setShowCookieConsent]);
+
+  const loadGoogleTag = () => {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-K6HK1NHGV1";
+    script.async = true;
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K6HK1NHGV1");
+    };
+
+    document.head.appendChild(script);
+  };
+
+  //********************************************************COOKIES = Accepter tout
   const handleAcceptAll = () => {
-    // Configurez les options sécurisées pour les cookies
     Cookies.set(
       "cookies-LEGALIS-Consent",
       "All Cookies Accepted",
       cookieOptions
     );
     setShowPopup(false);
-    setShowCookieConsent(false); // Masquer la fenêtre contextuelle après acceptation
+    setShowCookieConsent(false);
+    loadGoogleTag();
 
-    // Suivi de l'événement d'acceptation de tous les cookies
-    window.gtag("event", "accept_all_cookies", {
-      event_category: "Cookies",
-    });
+    // window.gtag("event", "accept_all_cookies", {
+    //   event_category: "Cookies",
+    // });
   };
 
-  //************************************Continuer sans accepter
+  //********************************************************COOKIES = Refuser tout
   const handleDeclineAll = () => {
     Object.keys(Cookies.get()).forEach((cookieName) => {
       if (cookieName.startsWith("_ga")) {
         Cookies.remove(cookieName);
       }
-    }); // Supprimer le cookie Google Analytics
+    });
 
     Cookies.set(
       "cookies-LEGALIS-Consent",
@@ -56,18 +81,17 @@ const CookieConsentPopup = ({
       cookieOptions
     );
     setShowPopup(false);
-    setShowCookieConsent(false); // Mettez à jour l'état showCookieConsent
-    setShowPopup(false); // Masquer la pop-up après refus
+    setShowCookieConsent(false);
     setGoogleAnalytics(true);
   };
 
+  //********************************************************COOKIES = Personaliser
   const handleCustomize = () => {
     setCustomizeCookies(true);
   };
 
-  //************************************Personnalisation des Cookies
   const handleFinishCustomizing = () => {
-    const googleAnalyticsAccepted = googleAnalytics; // Vérifiez si l'utilisateur a accepté Google Analytics
+    const googleAnalyticsAccepted = googleAnalytics;
 
     if (googleAnalyticsAccepted) {
       Cookies.set(
@@ -78,16 +102,17 @@ const CookieConsentPopup = ({
       setShowPopup(false);
       setShowCookieConsent(false);
       setGoogleAnalytics(true);
-      // Envoyer un événement d'acceptation personnalisée des cookies
-      window.gtag("event", "accept_customized_cookies", {
-        event_category: "Cookies",
-      });
+      loadGoogleTag();
+
+      // window.gtag("event", "accept_customized_cookies", {
+      //   event_category: "Cookies",
+      // });
     } else {
       Object.keys(Cookies.get()).forEach((cookieName) => {
         if (cookieName.startsWith("_ga")) {
           Cookies.remove(cookieName);
         }
-      }); // Supprimer le cookie Google Analytics
+      });
       Cookies.set(
         "cookies-LEGALIS-Consent",
         "GoogleAnalytics Cookie declined",
@@ -95,6 +120,7 @@ const CookieConsentPopup = ({
       );
       setShowPopup(false);
       setShowCookieConsent(false);
+      setGoogleAnalytics(true);
     }
   };
 
@@ -102,16 +128,15 @@ const CookieConsentPopup = ({
     return null;
   }
 
-  //*******************************************************************************************************
-
+  //********************************************************JSX
   return (
     <section className="cookieContainer">
       <div className="cookie-popup">
         {customizeCookies ? (
-          //************************************ Modale 2
-
           <div className="modal2">
-            <h3>Expérience utilisateur 🤩 </h3>
+            <h3>
+              Expérience utilisateur <img src={CheckIcon3d} alt="" />
+            </h3>
             <p>
               Les cookies servent à améliorer votre expérience. Nous
               enregistrons les informations que vous avez bien voulu nous
@@ -138,22 +163,6 @@ const CookieConsentPopup = ({
               <FontAwesomeIcon icon={faCircleQuestion} />
               <span className="toggle-label">Google Analytics</span>
             </div>
-            {/* 
-            <div className="toggle-wrapper">
-              <div className="toggle checkcross">
-                <input
-                  id="checkcross"
-                  type="checkbox"
-                  checked={otherCookies}
-                  onChange={() => setOtherCookies(!otherCookies)}
-                />
-                <label className="toggle-item" htmlFor="checkcross">
-                  <div className="check"></div>
-                </label>
-              </div>
-              <span></span>
-              <span className="toggle-label">Autres cookies</span>
-            </div> */}
 
             <div className="cookie-popup-buttons">
               <button
@@ -171,27 +180,19 @@ const CookieConsentPopup = ({
             </div>
           </div>
         ) : (
-          //************************************ Modale 1
-
           <div className="modal1">
             <h3>
-              🍪 Gestion des cookies 🍪 <br />
-              LEGALIS Cabinet de Conseil
+              <img src={CookieIcon3d} alt="" /> Gestion des cookies{" "}
+              <img src={CookieIcon3d} alt="" />
             </h3>
-            <button
-              className="cookie-popup-button decline"
-              onClick={handleDeclineAll}
-              title=" Pour une expérience personnalisée et sans interruption, nous vous
-                encourageons à accepter nos cookies. Cela nous permet de vous proposer
-                des contenus pertinents et de vous offrir un service de qualité. Merci"
-            >
-              Continuer sans accepter
-            </button>
+            <div>LEGALIS Cabinet de Conseil</div>
             <br />
+
             <p>
               Nous utilisons des cookies pour optimiser votre expérience
               utilisateur et pour améliorer nos contenus. Vous pouvez
               personnaliser et modifier vos choix à tout moment.
+              <br />
               <br /> Consulter notre &nbsp;
               <NavLink
                 to="/politique+confidentialité"
@@ -199,6 +200,14 @@ const CookieConsentPopup = ({
                 onClick={() => setShowPopup(false)}
               >
                 politique de confidentialité
+              </NavLink>
+              <br /> Consulter notre &nbsp;
+              <NavLink
+                to="/politique+cookies"
+                title="Consulter la politique en matière de cookies"
+                onClick={() => setShowPopup(false)}
+              >
+                politique en matière de cookies
               </NavLink>
             </p>
           </div>
@@ -212,6 +221,13 @@ const CookieConsentPopup = ({
                 onClick={handleAcceptAll}
               >
                 J'accepte tout
+              </button>
+              <button
+                className="cookie-popup-button decline"
+                onClick={handleDeclineAll}
+                title="Pour une expérience personnalisée et sans interruption, nous vous encourageons à accepter nos cookies. Cela nous permet de vous proposer des contenus pertinents et de vous offrir un service de qualité. Merci"
+              >
+                Je refuse tout
               </button>
               <button
                 className="cookie-popup-button customize"

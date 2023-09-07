@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -26,18 +27,15 @@ const Home = () => {
       </div>
       <h2>Sérénité administrative: votre parcours pris en charge de A à Z </h2>
       <div className="services">
-        <div className="card createBuisnessCard">
-          <h3>Créer mon entreprise</h3>
-          <div className="details">
-            {/* <ul>
-              <li>Personne physique</li>
-              <li>Personne morale </li>
-              Contactez-nous
-            </ul> */}
-            En savoir plus &nbsp;
-            <FontAwesomeIcon icon={faAnglesRight} shake />
+        <NavLink to="/creer+entreprise" className="card createBuisnessCard">
+          <div>
+            <h3>Créer mon entreprise</h3>
+            <div className="details">
+              En savoir plus &nbsp;
+              <FontAwesomeIcon icon={faAnglesRight} shake />
+            </div>
           </div>
-        </div>
+        </NavLink>
         <div className="card modifyBuisnessCard">
           <h3>Modifier mes statuts</h3>
           <div className="details">
