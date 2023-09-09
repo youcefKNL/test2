@@ -18,6 +18,8 @@ import PolitiqueDeConfidentialite from "./pages/PolitiqueConfidentialté";
 import MouseEffect from "./components/MouseEffect";
 import Tarifs from "./pages/Tarifs";
 import SectionCreerEntreprise from "./pages/SectionCreerEntreprise";
+import SectionModificationStatut from "./pages/SectionModificationStatut";
+import SectionFermetureEntreprise from "./pages/SectionFermetureEntreprise";
 function ScrollToAnchor() {
   const location = useLocation();
 
@@ -115,6 +117,14 @@ function App() {
         <Route path="/mentions+legales" element={<MentionsLegales />} />
         <Route path="/politique+cookies" element={<PolitiqueCookies />} />
         <Route path="/creer+entreprise" element={<SectionCreerEntreprise />} />
+        <Route
+          path="/modification+statut"
+          element={<SectionModificationStatut />}
+        />
+        <Route
+          path="/fermeture+entreprise"
+          element={<SectionFermetureEntreprise />}
+        />
         <Route
           path="/politique+confidentialité"
           element={<PolitiqueDeConfidentialite />}

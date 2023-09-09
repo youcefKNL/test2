@@ -36,24 +36,22 @@ const Home = () => {
             <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
         </NavLink>
-        <div className="card modifyBuisnessCard">
+        <NavLink to="/modification+statut" className="card modifyBuisnessCard">
           <h3>Modifier mes statuts</h3>
+          {/* <img src={IconCreation} alt="" /> */}
           <div className="details">
-            {/* Formalités modificatives statutaires et/ou non statutaires.
-            Contactez-nous */}
             En savoir plus &nbsp;
             <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
-        </div>
-        <div className="card closeBuisnessCard">
+        </NavLink>
+        <NavLink to="/fermeture+entreprise" className="card closeBuisnessCard">
           <h3>Fermer mon entreprise</h3>
+          {/* <img src={IconCreation} alt="" /> */}
           <div className="details">
-            {/* Radiation par clôture de liquidation,par transmission universelle du
-            patrimoine... Contactez-nous */}
             En savoir plus &nbsp;
             <FontAwesomeIcon icon={faAnglesRight} shake />
           </div>
-        </div>
+        </NavLink>
       </div>
     </section>
   );
