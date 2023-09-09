@@ -101,3 +101,53 @@ a:visited {
     transform: translate(20%, 20%) rotate(360deg);
   }
 }
+
+/* Transition */
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    backdrop-filter 0.5s ease-in-out;
+  z-index: 1;
+  backdrop-filter: blur(50px); /* Ajout du flou */
+  background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
+}
+.page.hidden {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Animation de transition entre les pages */
+/* Animation de transition entre les pages */
+.page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    backdrop-filter 0.5s ease-in-out;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(0); /* Sortie à gauche sans décalage vertical */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    backdrop-filter 0.5s ease-in-out;
+}

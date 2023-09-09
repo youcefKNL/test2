@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -82,8 +84,34 @@ function App() {
       <MouseEffect />
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route
+          path="/payment+success{CHECKOUT_SESSION_ID}"
+          element={<PaymentSucces />}
+        /> */}
+        {/* <Route path="/tarifs" element={<Tarifs />} /> */}
+        <Route
+          path="/"
+          element={
+            <TransitionGroup>
+              <CSSTransition key="home" classNames="page" timeout={500}>
+                <Home />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
+        <Route
+          path="/tarifs"
+          element={
+            <TransitionGroup>
+              <CSSTransition key="tarifs" classNames="page" timeout={500}>
+                <Tarifs />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
         <Route path="/conditions+generales" element={<CGV />} />
+
         <Route path="/mentions+legales" element={<MentionsLegales />} />
         <Route path="/politique+cookies" element={<PolitiqueCookies />} />
         <Route path="/creer+entreprise" element={<SectionCreerEntreprise />} />
@@ -91,11 +119,6 @@ function App() {
           path="/politique+confidentialité"
           element={<PolitiqueDeConfidentialite />}
         />
-        {/* <Route
-          path="/payment+success{CHECKOUT_SESSION_ID}"
-          element={<PaymentSucces />}
-        /> */}
-        <Route path="/tarifs" element={<Tarifs />} />
         <Route path="/payment+success" element={<PaymentSucces />} />
       </Routes>
       <ScrollToAnchor />

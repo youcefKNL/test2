@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+// import IconCreation from "../assets/emoji3d/3dicon-create-transformed-removebg-preview.png";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <div className="services">
         <NavLink to="/creer+entreprise" className="card createBuisnessCard">
           <h3>Créer mon entreprise</h3>
+          {/* <img src={IconCreation} alt="" /> */}
           <div className="details">
             En savoir plus &nbsp;
             <FontAwesomeIcon icon={faAnglesRight} shake />
