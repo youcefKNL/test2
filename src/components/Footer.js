@@ -9,10 +9,38 @@ const Footer = () => {
         <div className="list1">
           <h4>💼 Services</h4>
           <ul>
-            <li>Création d’entreprise</li>
-            <li>Modification d’entreprise</li>
-            <li>Fermeture d’entreprise</li>
-            <li>Toutes les démarches & Tarifs</li>
+            <li>
+              <NavLink
+                to="/creer+entreprise"
+                title="En savoir plus sur la crétion d'entreprise"
+              >
+                Création d’entreprise
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/modification+statut"
+                title="En savoir plus sur la modification d'entreprise"
+              >
+                Modification d’entreprise
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/fermeture+entreprise"
+                title="En savoir plus sur la fermeture d'entreprise"
+              >
+                Fermeture d’entreprise
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/tarifs"
+                title="En savoir plus sur nos services & tarifs"
+              >
+                Toutes les démarches & Tarifs
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="list2">

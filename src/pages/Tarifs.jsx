@@ -1,10 +1,12 @@
 import React from "react";
 import ServiceClientIcon3d from "../assets/emoji3d/service-client.png";
-
+import EuroIcon from "../assets/emoji3d/ideogram-removebg-preview (1).png";
 const Tarifs = () => {
   return (
     <section className="tarifs">
-      <h1>Tarification : création et gestion de société</h1>
+      <h1>
+        <img src={EuroIcon} alt="" /> &nbsp; Tarification des services
+      </h1>
       <div className="tarifsIntro">
         <img src={ServiceClientIcon3d} alt="" />
         <p>
