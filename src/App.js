@@ -5,7 +5,6 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import CGV from "./pages/ConditionsGenerales";
 import MentionsLegales from "./pages/MentionsLegales";
 import PaymentSucces from "./pages/PaymentSucess";
 import CookieConsentPopup from "./components/CookieConsentPopup";
