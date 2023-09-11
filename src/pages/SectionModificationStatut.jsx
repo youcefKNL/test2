@@ -3,7 +3,7 @@ import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
 
 const SectionModificationStatut = () => {
   return (
-    <setction className="sectionModifierEntreprise">
+    <section className="sectionModifierEntreprise">
       <h1>Modifier les Statuts de Votre Entreprise</h1>
 
       <div className="intro">
@@ -130,7 +130,7 @@ const SectionModificationStatut = () => {
           ainsi de vous concentrer sur le développement de votre entreprise.
         </p>
       </main>
-    </setction>
+    </section>
   );
 };
 
