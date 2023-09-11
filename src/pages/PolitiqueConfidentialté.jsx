@@ -1,11 +1,14 @@
 import React from "react";
 import Collapse from "../components/Collapse";
 import { NavLink } from "react-router-dom";
+import AccordLogo from "../assets/emoji3d/accord-3d-icon.png";
 
 const PolitiqueDeConfidentialite = () => {
   return (
     <section className="politiqueDeConfidentialite">
-      <h1>Politique de confidentialité</h1>
+      <h1>
+        <img src={AccordLogo} alt="" /> &nbsp; Politique de confidentialité
+      </h1>
       <div className="intro">
         Chez Legalis, nous attachons une grande importance au respect de votre
         vie privée ! La protection et la confidentialité de vos données

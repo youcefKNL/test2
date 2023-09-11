@@ -1,11 +1,14 @@
 import React from "react";
 import Collapse from "../components/Collapse";
 import { NavLink } from "react-router-dom";
+import AccordLogo from "../assets/emoji3d/accord-3d-icon.png";
 
 const ConditionCGV = () => {
   return (
     <section className="conditionsGenerales">
-      <h1>conditions generales</h1>
+      <h1>
+        <img src={AccordLogo} alt="" /> &nbsp; conditions generales
+      </h1>
       <p>
         Toute commande d’une prestation implique de plein droit l’acceptation
         par le Client (mandant) et son mandataire éventuel, des conditions

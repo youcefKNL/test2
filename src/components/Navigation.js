@@ -23,7 +23,7 @@ const Navigation = () => {
     };
   }, [lastScroll]);
   return (
-    <header role="banner">
+    <header role="banner" id="banner">
       <div className="container">
         <nav role="navigation" aria-label="principale">
           <ul className="linkPage">

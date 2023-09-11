@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceClientIcon3d from "../assets/emoji3d/service-client.png";
-import EuroIcon from "../assets/emoji3d/ideogram-removebg-preview (1).png";
+import EuroIcon from "../assets/emoji3d/euro-3d-icon.png";
 const Tarifs = () => {
   return (
     <section className="tarifs">

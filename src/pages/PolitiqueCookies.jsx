@@ -1,11 +1,15 @@
 import React from "react";
 import Collapse from "../components/Collapse";
 import { NavLink } from "react-router-dom";
+import AccordLogo from "../assets/emoji3d/accord-3d-icon.png";
 
 const PolitiqueCookies = () => {
   return (
     <section className="politiqueCookies">
-      <h1>POLITIQUE EN MATIÈRE DE COOKIES</h1>
+      <h1>
+        {" "}
+        <img src={AccordLogo} alt="" /> &nbsp; POLITIQUE EN MATIÈRE DE COOKIES
+      </h1>
       <p>
         La présente politique, la "Politique en matière de cookies", a pour
         objectif de fournir des informations claires, simples et exhaustives aux

@@ -1,12 +1,13 @@
 import React from "react";
-import interogationLogo from "../assets/emoji3d/ideogram-removebg-preview (2).png";
+import interogationLogo from "../assets/emoji3d/ideogram-removebg-preview (3).png";
 import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
 
 function SectionCreerEntreprise() {
   return (
     <section className="sectionCreerEntreprise">
       <h1>
-        Comment Créer une Entreprise <img src={interogationLogo} alt="" />
+        <img src={interogationLogo} alt="" />
+        Comment Créer une Entreprise
       </h1>
       <div className="intro">
         <img src={ServiceClientIcon3d} alt="" />

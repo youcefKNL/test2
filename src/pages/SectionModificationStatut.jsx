@@ -1,10 +1,14 @@
 import React from "react";
+import BlocNoteLogo from "../assets/emoji3d/Bloc-3d-icon.png";
 import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
 
 const SectionModificationStatut = () => {
   return (
     <section className="sectionModifierEntreprise">
-      <h1>Modifier les Statuts de Votre Entreprise</h1>
+      <h1>
+        <img src={BlocNoteLogo} alt="" />
+        Modifier les Statuts de Votre Entreprise{" "}
+      </h1>
 
       <div className="intro">
         <img src={ServiceClientIcon3d} alt="" />

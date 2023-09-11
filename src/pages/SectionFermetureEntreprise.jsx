@@ -1,11 +1,15 @@
 import React from "react";
+import CadenasLogo from "../assets/emoji3d/cadenas-3d-icon.png";
 import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
 
 const SectionFermetureEntreprise = () => {
   return (
     <div>
       <section className="sectionFermerEntreprise">
-        <h1>La Fermeture d'Entreprise 🔒</h1>
+        <h1>
+          <img src={CadenasLogo} alt="" />
+          La Fermeture d'Entreprise
+        </h1>
         <div className="intro">
           <img src={ServiceClientIcon3d} alt="" />
 
