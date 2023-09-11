@@ -20,6 +20,7 @@ import Tarifs from "./pages/Tarifs";
 import SectionCreerEntreprise from "./pages/SectionCreerEntreprise";
 import SectionModificationStatut from "./pages/SectionModificationStatut";
 import SectionFermetureEntreprise from "./pages/SectionFermetureEntreprise";
+import ConditionCGV from "./pages/ConditionsGenerales";
 function ScrollToAnchor() {
   const location = useLocation();
 
@@ -112,22 +113,109 @@ function App() {
             </TransitionGroup>
           }
         />
-        <Route path="/conditions+generales" element={<CGV />} />
+        {/* <Route path="/conditions+generales" element={<CGV />} /> */}
 
-        <Route path="/mentions+legales" element={<MentionsLegales />} />
-        <Route path="/politique+cookies" element={<PolitiqueCookies />} />
-        <Route path="/creer+entreprise" element={<SectionCreerEntreprise />} />
+        <Route
+          path="/conditions+generales"
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="conditions+generales"
+                classNames="page"
+                timeout={500}
+              >
+                <ConditionCGV />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
+        <Route
+          path="/mentions+legales"
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="mentions+legales"
+                classNames="page"
+                timeout={500}
+              >
+                <MentionsLegales />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
+        <Route
+          path="/politique+cookies"
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="politique+cookies"
+                classNames="page"
+                timeout={500}
+              >
+                <PolitiqueCookies />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
+
+        <Route
+          path="/creer+entreprise"
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="creer+entreprise"
+                classNames="page"
+                timeout={500}
+              >
+                <SectionCreerEntreprise />
+              </CSSTransition>
+            </TransitionGroup>
+          }
+        />
+
         <Route
           path="/modification+statut"
-          element={<SectionModificationStatut />}
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="modification+statut"
+                classNames="page"
+                timeout={500}
+              >
+                <SectionModificationStatut />
+              </CSSTransition>
+            </TransitionGroup>
+          }
         />
+
         <Route
           path="/fermeture+entreprise"
-          element={<SectionFermetureEntreprise />}
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="fermeture+entreprise"
+                classNames="page"
+                timeout={500}
+              >
+                <SectionFermetureEntreprise />
+              </CSSTransition>
+            </TransitionGroup>
+          }
         />
+
         <Route
           path="/politique+confidentialité"
-          element={<PolitiqueDeConfidentialite />}
+          element={
+            <TransitionGroup>
+              <CSSTransition
+                key="politique+confidentialité"
+                classNames="page"
+                timeout={500}
+              >
+                <PolitiqueDeConfidentialite />
+              </CSSTransition>
+            </TransitionGroup>
+          }
         />
         <Route path="/payment+success" element={<PaymentSucces />} />
       </Routes>
