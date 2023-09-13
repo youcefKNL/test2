@@ -10,7 +10,13 @@ function SectionCreerEntreprise() {
         Comment Créer une Entreprise
       </h1>
       <div className="intro">
-        <img src={ServiceClientIcon3d} alt="" />
+        <div className="wrapperImg">
+          <div class="right "></div>
+          <div class="left "></div>
+          <div class="middle zoomer">
+            <img src={ServiceClientIcon3d} alt="" />
+          </div>
+        </div>
         <p>
           Bienvenue dans notre guide complet sur la création d'une entreprise
           avec Legalis. <br /> Que vous soyez un entrepreneur débutant ou un

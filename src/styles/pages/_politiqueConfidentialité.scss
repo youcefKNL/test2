@@ -32,7 +32,9 @@
     }
   }
 
-  p {
+  p,
+  span {
+    display: block;
     padding: 0 5%;
     font-size: 0.8em;
     text-align: justify;

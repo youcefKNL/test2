@@ -11,7 +11,13 @@ const SectionModificationStatut = () => {
       </h1>
 
       <div className="intro">
-        <img src={ServiceClientIcon3d} alt="" />
+        <div className="wrapperImg">
+          <div class="right "></div>
+          <div class="left "></div>
+          <div class="middle zoomer">
+            <img src={ServiceClientIcon3d} alt="" />
+          </div>
+        </div>
         <p>
           Vous êtes à un moment clé de la vie de votre entreprise, et vous
           envisagez de modifier ses statuts pour mieux répondre à ses besoins

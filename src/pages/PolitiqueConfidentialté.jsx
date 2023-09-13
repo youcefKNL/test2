@@ -17,7 +17,7 @@ const PolitiqueDeConfidentialite = () => {
         uniquement aux fins de nos services, sauf si vous en décidez autrement.
       </div>
       <h2>🤝 Notre Engagement </h2>
-      <p>
+      <span>
         Nous respectons votre vie privée et vos choix. Vous avez la possibilité
         d'arrêter de recevoir nos communications à tout moment. Nous nous
         engageons à faciliter l'exercice de vos droits en tant qu'utilisateur.
@@ -51,10 +51,10 @@ const PolitiqueDeConfidentialite = () => {
             </NavLink>
           </li>
         </ul>
-      </p>
+      </span>
 
       <Collapse title="I. Quelques définitions">
-        <p>
+        <span>
           <ul>
             <li>
               <strong>« Données à caractère personnel »</strong> :Cela fait
@@ -149,7 +149,7 @@ const PolitiqueDeConfidentialite = () => {
               ce soit via des formulaires, des cookies, des analyses, etc.
             </li>
           </ul>
-        </p>
+        </span>
         <ul></ul>
         {/* Ajoutez d'autres informations relatives à la collecte de données ici */}
       </Collapse>
@@ -213,7 +213,7 @@ const PolitiqueDeConfidentialite = () => {
       </Collapse>
 
       <Collapse title="V. Les Bases Juridiques du Traitement de Vos Données à Caractère Personnel">
-        <p>
+        <span>
           Nous traitons vos Données à caractère personnel sur la base de
           différentes bases juridiques, notamment :
           <ul>
@@ -251,11 +251,11 @@ const PolitiqueDeConfidentialite = () => {
               📧 support@cabinetlegalis.fr
             </NavLink>
           </span>
-        </p>
+        </span>
       </Collapse>
 
       <Collapse title="VII. Comment nous utilisons vos Données à Caractère Personnel">
-        <p>
+        <span>
           Nous utilisons vos Données à caractère personnel pour les finalités
           suivantes :
           <ul>
@@ -293,10 +293,10 @@ const PolitiqueDeConfidentialite = () => {
               les besoins de nos utilisateurs.
             </li>
           </ul>
-        </p>
+        </span>
       </Collapse>
       <Collapse title="VIII. Comment nous partageons vos Données à Caractère Personnel">
-        <p>
+        <span>
           Nous pouvons partager vos Données à caractère personnel avec les
           catégories de destinataires suivantes :
           <ul>
@@ -339,7 +339,7 @@ const PolitiqueDeConfidentialite = () => {
               </strong>
             </li>
           </ul>
-        </p>
+        </span>
       </Collapse>
       <Collapse title="IX. Transferts Internationaux de Données à Caractère Personnel">
         <p>
@@ -353,7 +353,7 @@ const PolitiqueDeConfidentialite = () => {
         </p>
       </Collapse>
       <Collapse title="X. Vos Droits en Matière de Données à Caractère Personnel">
-        <p>
+        <span>
           Vous avez le droit de :
           <ul>
             <li>
@@ -400,7 +400,7 @@ const PolitiqueDeConfidentialite = () => {
               réglementation applicable en matière de protection des données.
             </li>
           </ul>
-        </p>
+        </span>
       </Collapse>
       <Collapse title="XI. Conservation de vos Données à Caractère Personnel">
         <p>

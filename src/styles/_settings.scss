@@ -1,17 +1,16 @@
-@font-face {
-  font-family: "philosopher";
-  src: url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@500&display=swap")
-    format("truetype");
-}
+// @font-face {
+//   font-family: "philosopher";
+//   src: url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+// }
+// @font-face {
+//   font-family: "Poppins";
+//   src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+// }
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-$font-1: "philosopher", sans-serif;
+$font-1: "Philosopher", sans-serif;
 $font-2: "Poppins", sans-serif;
 
 $color-WHITE: #ffffff;
@@ -79,9 +78,9 @@ a:visited {
 //   @include verticalCenter;
 //   flex-direction: column;
 // }
-// mouse-effect.scss
 
-// Classes
+//*************************************** mouse-effect.scss
+
 .mouse {
   position: absolute;
   width: 30px;
@@ -92,7 +91,8 @@ a:visited {
   animation: rotate 15s linear infinite;
 }
 
-// Keyframes pour la rotation
+// *********************************Keyframes pour la rotation
+
 @keyframes rotate {
   0% {
     transform: translate(20%, 20%) rotate(0deg);
@@ -102,56 +102,56 @@ a:visited {
   }
 }
 
-/* Transition */
-.page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
-    backdrop-filter 0.5s ease-in-out;
-  z-index: 1;
-  backdrop-filter: blur(50px); /* Ajout du flou */
-  background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
-}
-.page.hidden {
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
-}
+// /*********************************PAGE Transition */
 
-/* Animation de transition entre les pages */
-/* Animation de transition entre les pages */
-.page-enter {
-  opacity: 0;
-  transform: translateX(100%);
-}
+// .page {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   // display: flex;
+//   // flex-direction: column;
+//   // align-items: center;
+//   // justify-content: space-between;
+//   opacity: 1;
+//   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+//     backdrop-filter 0.5s ease-in-out;
+//   z-index: 1;
+//   backdrop-filter: blur(50px); /* Ajout du flou */
+//   background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
+// }
+// .page.hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   z-index: -1;
+// }
 
-.page-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
-    backdrop-filter 0.5s ease-in-out;
-  // background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
-}
+// /* Animation de transition entre les pages */
+// .page-enter {
+//   opacity: 0;
+//   transform: translateX(100%);
+// }
 
-.page-exit {
-  opacity: 1;
-  // transform: translateX(0);
-  // background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
-  transition: 0.3s;
-}
+// .page-enter-active {
+//   opacity: 1;
+//   transform: translateX(0);
+//   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+//     backdrop-filter 0.5s ease-in-out;
+//   // background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
+// }
 
-.page-exit-active {
-  opacity: 0;
-  background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
-  // transform: translateX(-100%); /* Sortie à gauche sans décalage vertical */
-  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
-  //   backdrop-filter 0.5s ease-in-out;
-}
+// .page-exit {
+//   opacity: 1;
+//   // transform: translateX(0);
+//   // background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
+//   transition: 0.3s;
+// }
+
+// .page-exit-active {
+//   opacity: 0;
+//   // background-color: rgba(241, 176, 15, 0.9); /* Fond doré avec transparence */
+//   // transform: translateX(-100%); /* Sortie à gauche sans décalage vertical */
+//   // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+//   //   backdrop-filter 0.5s ease-in-out;
+// }

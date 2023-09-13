@@ -11,7 +11,7 @@ const Footer = () => {
           <ul>
             <li>
               <NavLink
-                to="/creer+entreprise#banner"
+                to="/creer+entreprise"
                 title="En savoir plus sur la crétion d'entreprise"
               >
                 Création d’entreprise
@@ -19,7 +19,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/modification+statut#banner"
+                to="/modification+statut"
                 title="En savoir plus sur la modification d'entreprise"
               >
                 Modification d’entreprise
@@ -27,7 +27,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/fermeture+entreprise#banner"
+                to="/fermeture+entreprise"
                 title="En savoir plus sur la fermeture d'entreprise"
               >
                 Fermeture d’entreprise
@@ -35,7 +35,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/tarifs#banner"
+                to="/tarifs"
                 title="En savoir plus sur nos services & tarifs"
               >
                 Toutes les démarches & Tarifs
@@ -57,7 +57,7 @@ const Footer = () => {
           <ul>
             <li>
               <NavLink
-                to="/conditions+generales#banner"
+                to="/conditions+generales"
                 title="Consulter les conditions générales"
               >
                 Conditions générales
@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/mentions+legales#banner"
+                to="/mentions+legales"
                 title="Consulter les  mentions légales"
               >
                 Mentions légales
@@ -73,7 +73,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                to="/politique+confidentialité#banner"
+                to="/politique+confidentialité"
                 title="Consulter  la politique de confidentialité"
               >
                 Politique de confidentialité
@@ -82,7 +82,7 @@ const Footer = () => {
             <li>
               {" "}
               <NavLink
-                to="/politique+cookies#banner"
+                to="/politique+cookies"
                 title="Consulter  la politique en matière de cookies"
               >
                 Politique en matière de cookies

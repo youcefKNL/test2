@@ -5,7 +5,6 @@ const MentionsLegales = () => {
   return (
     <section id="mentionsLégales">
       <h1>
-        {" "}
         <img src={AccordLogo} alt="" /> &nbsp;Mentions légales
       </h1>
       <p>

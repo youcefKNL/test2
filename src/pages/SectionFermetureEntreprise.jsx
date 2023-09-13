@@ -11,7 +11,13 @@ const SectionFermetureEntreprise = () => {
           La Fermeture d'Entreprise
         </h1>
         <div className="intro">
-          <img src={ServiceClientIcon3d} alt="" />
+          <div className="wrapperImg">
+            <div class="right "></div>
+            <div class="left "></div>
+            <div class="middle zoomer">
+              <img src={ServiceClientIcon3d} alt="" />
+            </div>
+          </div>
 
           <div>
             <h2>🔒 Facilitez la Fermeture de Votre Entreprise !!</h2>
