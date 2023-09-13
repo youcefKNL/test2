@@ -20,6 +20,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import ShadowHtmlText from "./components/ShadowHtmlText";
 import Cookie from "./components/Cookie";
 import { AnimatePresence } from "framer-motion";
+import Page404 from "./pages/Page404";
 
 function App() {
   const location = useLocation();
@@ -55,6 +56,7 @@ function App() {
             element={<PolitiqueDeConfidentialite />}
           />
           <Route path="/payment+success" element={<PaymentSucces />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </AnimatePresence>
 
