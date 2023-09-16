@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/img/ideogram-removebg-preview (3).png";
-import Image2 from "../assets/img/ideogram-removebg-preview (4).png";
+// import Image2 from "../assets/img/ideogram-removebg-preview (4).png";
 import Image3 from "../assets/img/ideogram-removebg-preview (5).png";
 import { NavLink } from "react-router-dom";
 import AnimatedPage from "../components/AnimatedPage";
