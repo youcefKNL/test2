@@ -8,19 +8,37 @@ $icon-close: url("../../assets/img/ideogram\ \(33\).jpeg");
   .intro {
     border: 1px solid $color-GOLD;
     border-radius: 8px;
-    padding: 10px;
-  }
-  h1 {
-    font-size: 1.3em;
-    line-height: 1;
-    margin-bottom: 1%;
-    font-family: $font-1;
-  }
-  p {
-    font-size: 0.9em;
-    color: rgb(138, 137, 137);
-    margin: 0;
-    padding: 0;
+    padding: 10px 10px 0 10px;
+    h1 {
+      font-size: 1.3em;
+      line-height: 1;
+      margin-bottom: 1%;
+      font-family: $font-1;
+      text-align: center;
+    }
+    .introContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 1000px) {
+        flex-direction: column;
+      }
+      img {
+        min-width: 40%;
+        border-radius: 8px;
+        @media (max-width: 1000px) {
+          width: 100%;
+          margin: 3% 0;
+        }
+      }
+      p {
+        font-size: 1em;
+        color: rgb(117, 116, 116);
+        margin: 0;
+        padding: 0 8%;
+        text-align: justify;
+      }
+    }
   }
   h2 {
     text-align: center;

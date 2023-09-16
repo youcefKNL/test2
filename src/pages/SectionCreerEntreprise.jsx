@@ -95,7 +95,7 @@ function SectionCreerEntreprise() {
         </ol>
         <h2>🤔 Choisir le Statut</h2>
         <p>
-          Choisissez le Statut Adapté à Votre Projet Avant de créer votre
+          Choisissez le statut adapté à votre projet avant de créer votre
           entreprise, il est essentiel de déterminer le statut juridique qui
           convient le mieux à votre projet, en tenant compte de votre activité,
           de vos objectifs financiers, et de votre tolérance au risque. Peu

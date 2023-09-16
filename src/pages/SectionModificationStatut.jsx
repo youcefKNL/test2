@@ -62,15 +62,13 @@ const SectionModificationStatut = () => {
           </li>
         </ol>
         <h2>🧠 Notre Expertise à Votre Service</h2>
-        <p>
+        {/* <p>
           Chez Legalis, nous comprenons que la modification des statuts de votre
-          entreprise peut sembler complexe. C'est pourquoi notre équipe
-          d'experts en droit des affaires est là pour vous fournir les conseils
-          et l'assistance nécessaires. Nous vous guiderons à travers les étapes
-          du processus, de la rédaction des nouveaux statuts à leur
-          enregistrement officiel.
-        </p>
-        <ol>
+          entreprise peut sembler complexe. C'est pourquoi notre équipe est là
+          pour vous fournir les conseils et l'assistance nécessaires. Nous vous
+          guiderons à travers les étapes du processus.
+        </p> */}
+        {/* <ol>
           <li>Choisissez un nom d'entreprise unique.</li>
           <li>Rédigez les statuts de votre entreprise.</li>
           <li>
@@ -80,8 +78,8 @@ const SectionModificationStatut = () => {
           <li>Ouvrez un compte bancaire professionnel.</li>
           <li>Obtenez les licences et autorisations nécessaires.</li>
           <li>Commencez votre activité et développez votre entreprise.</li>
-        </ol>
-        <h2> 🏛️ Services d'Aide Administrative</h2>
+        </ol> */}
+        {/* <h2> 🏛️ Services d'Aide Administrative</h2> */}
         <p>
           Chez Legalis, nous comprenons que la modification des statuts de votre
           entreprise peut être une tâche complexe et exigeante sur le plan
@@ -91,53 +89,54 @@ const SectionModificationStatut = () => {
           toutes les formalités administratives soient remplies correctement et
           que votre processus de modification de statuts soit 100% opérationnel.{" "}
           <br />
-          Nos Services Administratifs Comprennent :
+          Nos services administratifs comprennent :
         </p>
         <ol>
           <li>
             👉
-            <strong> Analyse Complète :</strong> Nous commençons par examiner en
+            <strong> Analyse complète :</strong> Nous commençons par examiner en
             détail vos statuts actuels. Nous discutons ensuite avec vous de vos
             besoins et de vos objectifs afin de déterminer les modifications
             spécifiques requises.
           </li>
           <li>
             👉
-            <strong> Rassemblement de l'ensemble des Documents :</strong>Nous
+            <strong> Rassemblement de l'ensemble des documents :</strong>Nous
             vous aidons à rassembler tous les documents nécessaires pour la
             modification.
           </li>
           <li>
             👉
-            <strong> Coordination avec les Autorités :</strong> Legalis prend en
+            <strong> Coordination avec les autorités :</strong> Legalis prend en
             charge la communication et la coordination avec les autorités
             compétentes. Nous nous assurons que toutes les étapes
             administratives soient effectuées en temps voulu.
           </li>
           <li>
             👉
-            <strong> Gestion des Délais :</strong> Nous sommes conscients que le
+            <strong> Gestion des délais :</strong> Nous sommes conscients que le
             respect des délais est essentiel dans les procédures
             administratives. Notre équipe s'engage à respecter les échéances et
             à garantir un processus fluide.
           </li>
           <li>
             👉
-            <strong> Conseils Personnalisés :</strong> Vous pouvez compter sur
+            <strong> Conseils personnalisés :</strong> Vous pouvez compter sur
             notre équipe pour répondre à toutes vos questions et préoccupations.
           </li>
         </ol>
+        <h2>🤝 LEGALIS, Votre partenaire de confiance</h2>
         <p>
-          <strong>🤝 LEGALIS, Votre Partenaire de Confiance</strong> <br />
           Faire confiance à Legalis pour vos besoins administratifs en matière
           de modification de statuts signifie que vous avez un partenaire fiable
           à vos côtés. Nous visons à simplifier le processus complexe et à
           garantir que tout se déroule sans accroc.
           <br />
           Contactez-nous dès aujourd'hui pour discuter de vos besoins en matière
-          d'aide administrative pour la modification de statuts. Nous sommes là
-          pour vous aider à franchir chaque étape avec succès, vous permettant
-          ainsi de vous concentrer sur le développement de votre entreprise.
+          d'aide administrative pour la modification de statuts. <br /> Nous
+          sommes là pour vous aider à franchir chaque étape avec succès, vous
+          permettant ainsi de vous concentrer sur le développement de votre
+          entreprise.
         </p>
       </main>
     </section>

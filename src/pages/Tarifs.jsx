@@ -7,7 +7,8 @@ const Tarifs = () => {
     <AnimatedPage>
       <section className="tarifs">
         <h1>
-          <img src={EuroIcon} alt="" /> &nbsp; Tarification des services
+          <img src={EuroIcon} alt="" /> &nbsp; Tarification des services Hors
+          Taxes
         </h1>
         <div className="tarifsIntro">
           <div className="wrapperImg">
@@ -20,13 +21,13 @@ const Tarifs = () => {
 
           <p>
             "Nous sommes fiers de proposer les prix les plus compétitifs du
-            marché,, car nous reconnaissons que certains dossiers peuvent être
-            plus complexes que d'autres. C'est pourquoi nous mentionnons 'à
-            partir de' dans nos tarifs pour refléter la nature variable de
+            marché, car nous reconnaissons que certains dossiers peuvent être
+            plus complexes que d'autres. C'est pourquoi nous mentionnons à
+            partir de dans nos tarifs pour refléter la nature variable de
             certaines prestations administratives, car chaque dossier peut
             présenter des besoins spécifiques avec une transparence totale. Nos
             frais administratifs sont strictement basés sur les coûts réels
-            supportés par l'administration publique, sans aucun gonflement
+            supportés par l'administration publique*, sans aucun gonflement
             artificiel."
           </p>
         </div>

@@ -20,7 +20,7 @@ const SectionFermetureEntreprise = () => {
           </div>
 
           <div>
-            <h2>🔒 Facilitez la Fermeture de Votre Entreprise !!</h2>
+            <h2>🔒 Facilitez la Fermeture de votre entreprise !!</h2>
             La fermeture d'une entreprise peut être une tâche complexe et
             exigeante sur le plan administratif. <br /> Chez Legalis, nous nous
             spécialisons dans la fourniture de services d'assistance
@@ -36,7 +36,7 @@ const SectionFermetureEntreprise = () => {
           <ol>
             <li>
               👉
-              <strong> Préparation des Documents :</strong> Nous vous aidons à
+              <strong> Préparation des documents :</strong> Nous vous aidons à
               rassembler tous les documents nécessaires pour la fermeture, y
               compris les formulaires administratifs, les rapports financiers et
               les déclarations fiscales.
@@ -46,18 +46,6 @@ const SectionFermetureEntreprise = () => {
               <strong> Coordination avec les Autorités :</strong> Legalis gère
               les communications avec les autorités gouvernementales et s'assure
               que tous les documents requis sont soumis dans les délais.
-            </li>
-            <li>
-              👉
-              <strong> Gestion des Créanciers :</strong> Nous vous assistons
-              dans la communication avec les créanciers et dans la gestion du
-              règlement des dettes de l'entreprise.
-            </li>
-            <li>
-              👉
-              <strong> Finalisation des Comptes :</strong> Nous veillons à la
-              clôture correcte des comptes de l'entreprise, y compris le
-              paiement des impôts et des frais restants.
             </li>
             <li>
               👉

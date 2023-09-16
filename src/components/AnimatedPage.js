@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { useLocation } from "react-router-dom";
 
 const animations = {
   initial: {
@@ -10,11 +9,11 @@ const animations = {
   animate: {
     opacity: 1,
     transform: "translateX(0)",
-    transition: "0.5s ease",
+    transition: "0.3s ease",
   },
   exit: {
-    opacity: 0.6,
-    transition: " 0.3s ease",
+    opacity: 0, // Mettez l'opacité à 0 pour l'animation de sortie
+    transition: { duration: 0.3, ease: "easeOut" }, // Définissez la durée et l'ease appropriés pour l'animation de sortie
     transform: "translateX(-100%)",
   },
 };
@@ -22,6 +21,7 @@ const animations = {
 const AnimatedPage = ({ children }) => {
   return (
     <motion.div
+      key={children.key} // Assurez-vous que le composant est correctement mis à jour avec la clé
       variants={animations}
       initial="initial"
       animate="animate"
