@@ -1,6 +1,6 @@
 import React from "react";
 import interogationLogo from "../assets/emoji3d/ideogram-removebg-preview (3).png";
-import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
+import ServiceClientIcon3d from "../assets/emoji3d/ideogram-removebg-preview (8).png";
 
 function SectionCreerEntreprise() {
   return (

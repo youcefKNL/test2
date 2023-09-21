@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import AnimatedPage from "../components/AnimatedPage";
-import ServiceClientLegalis from "../assets/img/ideogram__42_-removebg-preview.png";
+import ServiceClientLegalis from "../assets/img/ideogram__6_-removebg-preview.png";
 // import IconCreation from "../assets/emoji3d/3dicon-create-transformed-removebg-preview.png";
 
 const Home = () => {

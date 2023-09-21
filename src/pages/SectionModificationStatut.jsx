@@ -1,6 +1,6 @@
 import React from "react";
 import BlocNoteLogo from "../assets/emoji3d/Bloc-3d-icon.png";
-import ServiceClientIcon3d from "../assets/emoji3d/service-client2.png";
+import ServiceClientIcon3d from "../assets/emoji3d/ideogram-removebg-preview (8).png";
 
 const SectionModificationStatut = () => {
   return (
