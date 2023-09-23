@@ -20,6 +20,7 @@ import ShadowHtmlText from "./components/ShadowHtmlText";
 import Cookie from "./components/Cookie";
 import { AnimatePresence } from "framer-motion";
 import Page404 from "./pages/Page404";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/tarifs" element={<Tarifs />} />
+          <Route path="/contact+us" element={<ContactUs />} />
           <Route path="/conditions+generales" element={<ConditionCGV />} />
           <Route path="/mentions+legales" element={<MentionsLegales />} />
           <Route path="/politique+cookies" element={<PolitiqueCookies />} />

@@ -1,0 +1,59 @@
+.contact {
+  margin: 5% 0;
+  .contact-grid {
+    min-height: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 2% 0;
+
+      button {
+        i {
+          margin-right: 20px;
+          font-size: 1.5em;
+        }
+        min-width: 300px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.25em;
+        font-family: inherit;
+        background-color: $color-GOLD;
+        padding: 5px 50px;
+        margin: 2%;
+        border-radius: 1.1em / 50%;
+        box-shadow: 0 0.1em 0.3em rgba(#000000, 0.5),
+          0 -0.5em 1em rgba(#000000, 0.4) inset;
+        transition: box-shadow 32ms ease-out, color 32ms ease-out;
+        cursor: pointer;
+
+        // Active State
+        &:active {
+          color: #dadada;
+          box-shadow: 0 0 0 rgba(#000000, 0.5),
+            0 1em 2em rgba(#000000, 0.5) inset;
+        }
+      }
+    }
+    .WhatsApp {
+      button {
+        background: rgb(68, 235, 98);
+      }
+    }
+    .mailContact {
+      button {
+        background: rgb(41, 170, 226);
+      }
+    }
+    .phoneContact {
+    }
+  }
+}

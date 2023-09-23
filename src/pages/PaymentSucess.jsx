@@ -10,6 +10,7 @@ const PaymentSuccess = () => {
           <div key={i} className={`confetti-${i}`}></div>
         ))}
       </div>
+
       <div className="paymentSuccesContainerContent">
         <h2>Merci pour votre confiance !</h2>
 
@@ -140,7 +141,7 @@ const PaymentSuccess = () => {
       </div>
 
       {/* Conteneur pour les confettis */}
-      <div className="confetti-container"></div>
+      {/* <div className="confetti-container"></div> */}
     </section>
   );
 };

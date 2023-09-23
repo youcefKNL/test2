@@ -48,7 +48,11 @@ const Footer = () => {
           <ul>
             <li>Guides juridiques</li>
             <li>Questions fréquentes</li>
-            <li>Contactez-nous</li>
+            <li>
+              <NavLink to="/contact+us" title="Contactez-nous">
+                Contactez-nous
+              </NavLink>
+            </li>
             <li>Moyens de paiement</li>
           </ul>
         </div>
