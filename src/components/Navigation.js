@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo-Legalis2-removebg-preview.png";
 
 const Navigation = () => {
+  const portable = process.env.REACT_APP_PORTABLE;
+  const portableSansPremierChiffre = portable.slice(1);
+
   const [lastScroll, setLastScroll] = useState(0);
 
   useEffect(() => {
@@ -72,7 +75,7 @@ const Navigation = () => {
               🗂️ Assistance 7j/7 24h/24
             </p>
             <li>
-              <a href="tel:0601312152" alt="Appeler">
+              <a href={`tel:${portable}`} alt="Appeler">
                 <i className="fa-solid fa-phone "></i>
               </a>
             </li>
@@ -88,8 +91,10 @@ const Navigation = () => {
 
             <li>
               <a
-                href="https://wa.me/33601312152"
+                href={`https://wa.me/33${portableSansPremierChiffre}`}
                 alt="Envoyer un message WhatsApp"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 <i className="fa-brands fa-whatsapp "></i>
               </a>

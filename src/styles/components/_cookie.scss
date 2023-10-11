@@ -328,7 +328,12 @@
   // mix-blend-mode: darken;
   img {
     width: 40px;
-    animation: spinner 4s infinite;
+    animation: spinner 4s infinite linear;
+  }
+  &:hover {
+    img {
+      animation: spinner 1s infinite linear;
+    }
   }
 }
 

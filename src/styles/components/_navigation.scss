@@ -2,7 +2,7 @@
 
 header[role="banner"] {
   // padding-block: 2rem;
-  padding-top: 1%;
+  padding-top: 2%;
 
   .container {
     width: 100%;
@@ -116,7 +116,8 @@ header[role="banner"] {
         font-size: 0.8em;
       }
       .contact {
-        margin-left: 4%;
+        margin: 0 0 0 4%;
+        // margin-left: 4%;
         @media (max-width: 1000px) {
           margin-left: 0;
           position: fixed;

@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import AccordLogo from "../assets/emoji3d/accord-3d-icon.png";
 
 const ConditionCGV = () => {
+  const email = process.env.REACT_APP_EMAIL;
+
   return (
     <section className="conditionsGenerales">
       <h1>
@@ -206,8 +208,8 @@ const ConditionCGV = () => {
           services, ou s'il souhaite signaler un contenu ou des activités
           illicites, il peut adresser un courriel à l'adresse suivante : &nbsp;
           📧&nbsp;
-          <NavLink to="mailto:support@cabinetlegalis.fr">
-            <strong>support@cabinetlegalis.fr</strong>
+          <NavLink to={`mailto:${email}`}>
+            <strong>{email}</strong>
           </NavLink>
         </p>
       </Collapse>
@@ -219,41 +221,39 @@ const ConditionCGV = () => {
           d'assurer le suivi de son dossier. Le Client est conscient qu'il a le
           droit de refuser de cet envoi de SMS à tout moment en notifiant son
           choix à la société par écrit à l'adresse suivante : 📧&nbsp;
-          <NavLink to="mailto:support@cabinetlegalis.fr">
-            support@cabinetlegalis.fr
-          </NavLink>
-          . Pour que le service puisse être fourni, le Client sera tenu de
-          fournir une ou plusieurs pièces d'identité actuelles et conformes aux
-          originaux. Le Client comprend et accepte expressément que la société
-          ne puisse être tenue responsable en aucune circonstance, que ce soit
-          envers le Client, ses ayants-droits ou un tiers, en ce qui concerne
-          ces éléments. Le Client prend connaissance du fait que, pour des
-          raisons internes liées à l'organisation de la société, celle-ci
-          pourrait refuser de fournir tout ou partie du service au Client. La
-          société s'engage à communiquer cette décision au Client dans les plus
-          brefs délais. Dans ce contexte, la société pourrait ajuster le prix du
-          service en conséquence. Modèles de Documents En fonction de la forme
-          juridique choisie par le client sans aucun conseil juridique de la
-          société, un modèle de statuts ou toute autre acte juridique lui sera
-          mis à disposition à titre gracieux. L'objectif est de permettre au
-          client de prendre connaissance du Modèle et de le compléter selon ses
-          besoins. Le client soumet les actes juridiques qu'il a complétés et
-          signés par lui-même, afin de compléter son dossier et de les
-          transmettre aux instances administratives compétentes. Il est
-          important de noter que la société n'étant ni juriste ni avocat, aucune
-          révision approfondie ne sera entreprise. La société décline toute
-          responsabilité pour toute erreur, inexactitude ou omission dans les
-          documents soumis par le Client. Il est vivement recommandé au Client
-          de faire appel à un professionnel du droit pour une vérification
-          approfondie avant de soumettre les documents aux autorités. En effet,
-          ces Modèles sont conçus pour faciliter la création d'un document
-          juridique complet et précis en fournissant une structure adéquate et
-          un langage approprié. Cependant, il est important de noter que chaque
-          situation juridique est unique, et l'utilisation d'un modèle type
-          d'acte juridique nécessite souvent des ajustements pour s'adapter aux
-          circonstances particulières. Il est recommandé de consulter un
-          professionnel du droit pour s'assurer de l'adéquation du Modèle avec
-          la situation spécifique et la conformité aux lois en vigueur.
+          <NavLink to={`mailto:${email}`}>{email}</NavLink>. Pour que le service
+          puisse être fourni, le Client sera tenu de fournir une ou plusieurs
+          pièces d'identité actuelles et conformes aux originaux. Le Client
+          comprend et accepte expressément que la société ne puisse être tenue
+          responsable en aucune circonstance, que ce soit envers le Client, ses
+          ayants-droits ou un tiers, en ce qui concerne ces éléments. Le Client
+          prend connaissance du fait que, pour des raisons internes liées à
+          l'organisation de la société, celle-ci pourrait refuser de fournir
+          tout ou partie du service au Client. La société s'engage à communiquer
+          cette décision au Client dans les plus brefs délais. Dans ce contexte,
+          la société pourrait ajuster le prix du service en conséquence. Modèles
+          de Documents En fonction de la forme juridique choisie par le client
+          sans aucun conseil juridique de la société, un modèle de statuts ou
+          toute autre acte juridique lui sera mis à disposition à titre
+          gracieux. L'objectif est de permettre au client de prendre
+          connaissance du Modèle et de le compléter selon ses besoins. Le client
+          soumet les actes juridiques qu'il a complétés et signés par lui-même,
+          afin de compléter son dossier et de les transmettre aux instances
+          administratives compétentes. Il est important de noter que la société
+          n'étant ni juriste ni avocat, aucune révision approfondie ne sera
+          entreprise. La société décline toute responsabilité pour toute erreur,
+          inexactitude ou omission dans les documents soumis par le Client. Il
+          est vivement recommandé au Client de faire appel à un professionnel du
+          droit pour une vérification approfondie avant de soumettre les
+          documents aux autorités. En effet, ces Modèles sont conçus pour
+          faciliter la création d'un document juridique complet et précis en
+          fournissant une structure adéquate et un langage approprié. Cependant,
+          il est important de noter que chaque situation juridique est unique,
+          et l'utilisation d'un modèle type d'acte juridique nécessite souvent
+          des ajustements pour s'adapter aux circonstances particulières. Il est
+          recommandé de consulter un professionnel du droit pour s'assurer de
+          l'adéquation du Modèle avec la situation spécifique et la conformité
+          aux lois en vigueur.
         </p>
       </Collapse>
       <Collapse title="VI. Formalités entreprises">
@@ -574,8 +574,8 @@ const ConditionCGV = () => {
           </NavLink>{" "}
           <br /> Si vous avez des questions, n'hésitez pas à nous contacter par
           e-mail à l'adresse : 📧&nbsp;
-          <NavLink to="mailto:support@cabinetlegalis.fr">
-            <strong>support@cabinetlegalis.fr</strong>
+          <NavLink to={`mailto:${email}`}>
+            <strong>{email}</strong>
           </NavLink>
         </p>
       </Collapse>
@@ -584,8 +584,8 @@ const ConditionCGV = () => {
         <p>
           Toute réclamation que le client pourrait avoir doit être adressée par
           voie électronique à l'adresse suivante : 📧&nbsp;
-          <NavLink to="mailto:support@cabinetlegalis.fr">
-            <strong>support@cabinetlegalis.fr</strong>
+          <NavLink to={`mailto:${email}`}>
+            <strong>{email}</strong>
           </NavLink>
           . <br /> Le Client dispose d'un délai de soixante (60) jours à partir
           de la date de fourniture des services pour émettre des réclamations,
@@ -682,8 +682,8 @@ const ConditionCGV = () => {
           vos données, de les rectifier, de les supprimer, de limiter leur
           traitement et de vous opposer à leur traitement. <br /> Vous pouvez
           exercer vos droits en nous contactant par e-mail à 📧&nbsp;
-          <NavLink to="mailto:support@cabinetlegalis.fr">
-            <strong>support@cabinetlegalis.fr</strong>
+          <NavLink to={`mailto:${email}`}>
+            <strong>{email}</strong>
           </NavLink>
           . <br /> Pour de plus amples informations concernant le traitement de
           vos données personnelles, nous vous invitons à consulter notre

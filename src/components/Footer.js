@@ -3,6 +3,19 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/img/logo-Legalis2.png";
 
 const Footer = () => {
+  /*******************************************************************/
+  const email = process.env.REACT_APP_EMAIL;
+  const portable = process.env.REACT_APP_PORTABLE;
+  let portableAvecEspaces = "";
+  // Ajouter un espace après chaque paire de chiffres
+  for (let i = 0; i < portable.length; i += 2) {
+    portableAvecEspaces += portable.slice(i, i + 2);
+    if (i + 2 < portable.length) {
+      portableAvecEspaces += " ";
+    }
+  }
+  /*******************************************************************/
+
   return (
     <footer>
       <div className="flexList">
@@ -105,11 +118,9 @@ const Footer = () => {
             </li>
             <li>
               📧&nbsp;
-              <NavLink to="mailto:support@cabinetlegalis.fr">
-                support@cabinetlegalis.fr
-              </NavLink>
+              <NavLink to={`mailto:${email}`}>{email}</NavLink>
             </li>
-            <li>📞 06 xx xx xx xx</li>
+            <li>📞 {portableAvecEspaces}</li>
           </ul>
         </div>
       </div>

@@ -16,7 +16,7 @@ import PolitiqueDeConfidentialite from "./pages/PolitiqueConfidentialté";
 import MouseEffect from "./components/MouseEffect";
 import ConditionCGV from "./pages/ConditionsGenerales";
 import ScrollToTop from "./components/ScrollToTop";
-import ShadowHtmlText from "./components/ShadowHtmlText";
+import ShadowJsText from "./components/ShadowJavaScriptText";
 import Cookie from "./components/Cookie";
 import { AnimatePresence } from "framer-motion";
 import Page404 from "./pages/Page404";
@@ -26,7 +26,7 @@ function App() {
   const location = useLocation();
   return (
     <>
-      <ShadowHtmlText />
+      <ShadowJsText />
       <ScrollToTop />
       <MouseEffect />
       <Navigation />

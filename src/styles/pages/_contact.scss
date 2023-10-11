@@ -17,29 +17,34 @@
       button {
         i {
           margin-right: 20px;
-          font-size: 1.5em;
+          font-size: 2em;
         }
-        min-width: 300px;
+        width: 350px;
         min-height: 50px;
         display: flex;
         align-items: center;
+        justify-content: center;
         color: #ffffff;
-        font-size: 1.25em;
+        font-size: 1em;
         font-family: inherit;
         background-color: $color-GOLD;
         padding: 5px 50px;
         margin: 2%;
-        border-radius: 1.1em / 50%;
+        border-radius: 30px;
         box-shadow: 0 0.1em 0.3em rgba(#000000, 0.5),
           0 -0.5em 1em rgba(#000000, 0.4) inset;
         transition: box-shadow 32ms ease-out, color 32ms ease-out;
         cursor: pointer;
+        transition: 0.3s;
 
         // Active State
         &:active {
           color: #dadada;
           box-shadow: 0 0 0 rgba(#000000, 0.5),
             0 1em 2em rgba(#000000, 0.5) inset;
+        }
+        &:hover {
+          color: $color-BLACK;
         }
       }
     }

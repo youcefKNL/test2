@@ -1,0 +1,22 @@
+@import "./styles/settings";
+
+// ******************************* Styles Pages
+@import "./styles/pages/home";
+@import "./styles/pages/politiqueConfidentialité";
+@import "./styles/pages/politiqueCookie";
+@import "./styles/pages/mentionsLegales";
+@import "./styles/pages/conditionsGenerales";
+@import "./styles/pages/paymentSucess";
+@import "./styles/pages/tarifs";
+@import "./styles/pages/CreerEntreprise";
+@import "./styles/pages/modificationEntreprise";
+@import "./styles/pages/fermerEntreprise";
+@import "./styles/pages/page404";
+@import "./styles/pages/contact";
+
+// ******************************* Styles Component
+@import "./styles/components/navigation";
+@import "./styles/components/footer";
+@import "./styles/components/collapse";
+@import "./styles/components/cookie.scss";
+@import "./styles/components/formContact";

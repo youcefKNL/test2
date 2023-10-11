@@ -2,6 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import AccordLogo from "../assets/emoji3d/accord-3d-icon.png";
 const MentionsLegales = () => {
+  const email = process.env.REACT_APP_EMAIL;
+  const portable = process.env.REACT_APP_PORTABLE;
+  const siret = process.env.REACT_APP_SIRET;
+  const tva = process.env.REACT_APP_TVA;
+
   return (
     <section id="mentionsLégales">
       <h1>
@@ -21,10 +26,10 @@ const MentionsLegales = () => {
       <h2>Identité</h2>
       <p>
         Le site cabinetlegalis.fr est édité par la société LEGALIS, société par
-        actions simplifiée à associée unique au capital de 1 euros, dont le
+        actions simplifiée à associée unique au capital de 100 euros, dont le
         siège social est situé 9 rue du jasmin, 91000 evry, immatriculée au
-        Registre du Commerce et des Sociétés de Paris sous le numéro 814 428 785
-        et dont le numéro TVA est FR24814428785.
+        Registre du Commerce et des Sociétés d'EVRY sous le numéro {siret}
+        et dont le numéro TVA est {tva}.
       </p>
 
       <h2> Responsable de publication</h2>
@@ -40,7 +45,7 @@ const MentionsLegales = () => {
 
       <h2> Nous contacter</h2>
       <p>
-        Par email : support@cabinetlegalis.fr Par téléphone : 01.xx.xx.xx.xx
+        Par email : {email} Par téléphone : {portable}
       </p>
 
       <h2>En savoir plus</h2>
