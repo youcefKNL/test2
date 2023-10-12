@@ -23,4 +23,4 @@ jobs:
           username: ${{ secrets.HOSTINGER_USERNAME }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
           local-dir: ./build/
-          remote-dir: /public_html/
+          server-dir: /public_html/
