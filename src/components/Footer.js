@@ -111,7 +111,7 @@ const Footer = () => {
           <h4>ℹ️ À propos</h4>
           <ul>
             <li>
-              📬 Legalis Cabinet de Conseil
+              📬 LEGALIS Cabinet de Conseil
               <br /> &nbsp; &nbsp;&nbsp; 9 rue du Jasmin
               <br />
               &nbsp; &nbsp;&nbsp; 91000 Évry-Courcouronnes
