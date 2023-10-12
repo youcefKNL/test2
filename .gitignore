@@ -7,6 +7,6 @@
 # production
 /build
 
-
-.env
+/.gitignore
+/.env
 
