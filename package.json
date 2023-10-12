@@ -1,9 +1,8 @@
 {
-  "name": "legalis",
-  "version": "0.1.0",
-  "private": true,
   "homepage": "https://www.cabinetlegalis.fr/",
-  "description": "my react",
+  "name": "LEGALIS",
+  "version": "0.1.1",
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -21,8 +20,7 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "react-use": "^17.4.0",
-    "sass": "^1.66.0",
-    "web-vitals": "^2.1.4"
+    "sass": "^1.66.0"
   },
   "scripts": {
     "start": "react-scripts start",
