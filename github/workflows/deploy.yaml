@@ -20,8 +20,8 @@ jobs:
       - name: Deploy to Hostinger
         uses: easingthemes/ssh-deploy@v2
         with:
-          server: ${{ secrets.SERVER }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          server: ${{ secrets.HOSTINGER_SERVER }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          password: ${{ secrets.HOSTINGER_PASSWORD }}
           local-path: "./dist/"
           server-path: "/public_html/"
