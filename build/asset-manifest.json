@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43b4fabc.css",
+    "main.js": "/static/js/main.3d7b11ad.js",
+    "static/media/ideogram__6_-removebg-preview.png": "/static/media/ideogram__6_-removebg-preview.496fa5aa455727b1104c.png",
+    "static/media/ideogram-removebg-preview (5).png": "/static/media/ideogram-removebg-preview (5).7a1c45977ae7f39a354c.png",
+    "static/media/cookie-icon.png": "/static/media/cookie-icon.056d805758e0a3cca215.png",
+    "static/media/ideogram-removebg-preview (3).png": "/static/media/ideogram-removebg-preview (3).dafecfd0d4bb50da643d.png",
+    "static/media/cookie-icon2.png": "/static/media/cookie-icon2.bc470c65829851b8a0e0.png",
+    "static/media/service-client.png": "/static/media/service-client.5fc7ed73cf6af01212b2.png",
+    "static/media/accord-3d-icon.png": "/static/media/accord-3d-icon.4cc139c68ebcbe970395.png",
+    "static/media/logo-Legalis2-removebg-preview.png": "/static/media/logo-Legalis2-removebg-preview.a26f74575d708c47f19c.png",
+    "static/media/ideogram (30).jpeg": "/static/media/ideogram (30).15798899ca0c2a401bf9.jpeg",
+    "static/media/ideogram (28).jpeg": "/static/media/ideogram (28).e4c38fc6c50ad3e431cf.jpeg",
+    "static/media/Bloc-3d-icon.png": "/static/media/Bloc-3d-icon.6096ed176ab46948b9b4.png",
+    "static/media/check-icon.png": "/static/media/check-icon.f2bcac79ecbe1511fa5c.png",
+    "static/media/ideogram (33).jpeg": "/static/media/ideogram (33).bddcf1c2cf316fb609b2.jpeg",
+    "static/media/cadenas-3d-icon.png": "/static/media/cadenas-3d-icon.f01a7bc423239d1b3589.png",
+    "static/media/logo-Legalis2.png": "/static/media/logo-Legalis2.a1bfb75dac609e706eb9.png",
+    "static/media/logo-Legalis.png": "/static/media/logo-Legalis.9884b55d6f0df3ec24c4.png",
+    "static/media/ideogram-removebg-preview (8).png": "/static/media/ideogram-removebg-preview (8).cfab633dbdbe18566014.png",
+    "static/media/euro-3d-icon.png": "/static/media/euro-3d-icon.4ae46c20775ea465be97.png",
+    "index.html": "/index.html",
+    "static/media/chevron-down-solid.svg": "/static/media/chevron-down-solid.2315f85335b3b6805ba7666d56cbc6aa.svg",
+    "static/media/chevron-up-solid.svg": "/static/media/chevron-up-solid.4a0d3650fa868343d6697607ac04673f.svg",
+    "main.43b4fabc.css.map": "/static/css/main.43b4fabc.css.map",
+    "main.3d7b11ad.js.map": "/static/js/main.3d7b11ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43b4fabc.css",
+    "static/js/main.3d7b11ad.js"
+  ]
+}
