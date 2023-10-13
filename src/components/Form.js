@@ -38,10 +38,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        "service_yu9p83a",
-        "template_hn9ev4u",
+        process.env.REACT_APP_SERVICE_EMAILJS,
+        process.env.REACT_APP_TEMPLATE_EMAILJS,
         form.current,
-        process.env.REACT_APP_ID
+        process.env.REACT_APP_ID_EMAILJS
       )
       .then(
         (result) => {

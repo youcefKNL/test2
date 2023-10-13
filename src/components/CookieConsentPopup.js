@@ -36,7 +36,7 @@ const CookieConsentPopup = ({
 
   const loadGoogleTag = () => {
     const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-K6HK1NHGV1";
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-ZRRQ33Z51P";
     script.async = true;
 
     script.onload = () => {
@@ -45,7 +45,7 @@ const CookieConsentPopup = ({
         window.dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-K6HK1NHGV1");
+      gtag("config", "G-ZRRQ33Z51P");
     };
 
     document.head.appendChild(script);
