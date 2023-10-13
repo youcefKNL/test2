@@ -39,6 +39,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -47,20 +48,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
       - name: Install dependencies
         run: npm install
 
       - name: Build
         run: npm run build
 
-      - name: Deploy to build branch
+      - name: Deploy to 'build' branch
         run: |
-          git checkout -b build
-          git add -A
-          git commit -m "Auto-build and deploy"
+          git checkout -B build
+          git add .
+          git commit -m "Build update"
           git push origin build
