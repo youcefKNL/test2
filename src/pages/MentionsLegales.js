@@ -10,7 +10,8 @@ const MentionsLegales = () => {
   return (
     <section id="mentionsLégales">
       <h1>
-        <img src={AccordLogo} alt="" /> &nbsp;Mentions légales
+        <img src={AccordLogo} alt="geste de la main pour un accord" />{" "}
+        &nbsp;Mentions légales
       </h1>
       <p>
         Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour
@@ -28,7 +29,7 @@ const MentionsLegales = () => {
         Le site cabinetlegalis.fr est édité par la société LEGALIS, société par
         actions simplifiée à associée unique au capital de 100 euros, dont le
         siège social est situé 9 rue du jasmin, 91000 evry, immatriculée au
-        Registre du Commerce et des Sociétés d'EVRY sous le numéro {siret}
+        Registre du Commerce et des Sociétés d'EVRY sous le numéro {siret}&nbsp;
         et dont le numéro TVA est {tva}.
       </p>
 
@@ -39,13 +40,20 @@ const MentionsLegales = () => {
 
       <h2>Hébergeur</h2>
       <p>
-        Le site cabinetlegalis.fr est hébergé par la société Amazon Web Services
-        LLC Adresse: P.O. Box 81226, Seattle, WA 98108-1226
+        Le site cabinetlegalis.fr est hébergé par la société HOSTINGER, dont le
+        siège social est situé HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos
+        Street, 6023 Larnaca, Chypre, joignable par le moyen suivant :
+        <NavLink
+          to="https://www.hostinger.fr/contact"
+          title="Allez sur Hostinger"
+          target="_blank"
+        >
+          <strong> https://www.hostinger.fr/contact.</strong>
+        </NavLink>
       </p>
-
       <h2> Nous contacter</h2>
       <p>
-        Par email : {email} Par téléphone : {portable}
+        Par email : {email} <br /> Par téléphone : {portable}
       </p>
 
       <h2>En savoir plus</h2>

@@ -1,0 +1,32 @@
+[
+  {
+    "nom": "Hassanein Mohamed",
+    "stars": "5",
+    "commentaire": "C’est incroyable ce cabinet ils travaillent jours et nuit j’ai l’impression travail fait en une journée pour un changement de capital vraiment chapeau.",
+    "source": "icone/google.png"
+  },
+  {
+    "nom": "Y Z",
+    "stars": "5",
+    "commentaire": "Je suis extrêmement satisfait du service exceptionnel fourni par le cabinet Legalis. Leur rapidité d'action et leur professionnalisme m'ont vraiment impressionné. Merci à toute l'équipe pour leur efficacité et leur engagement à résoudre rapidement mes préoccupations juridiques. Je recommande vivement leurs services!",
+    "source": "icone/google.png"
+  },
+  {
+    "nom": "kbh kbh",
+    "stars": "5",
+    "commentaire": "Tous ç est tres bien passer , réactif et efficace! Je recommande",
+    "source": "icone/trustpilot.png "
+  },
+  {
+    "nom": "HAKAN BAYRAKTUTAN",
+    "stars": "5",
+    "commentaire": "Cabinet très sérieux.",
+    "source": "icone/trustpilot.png"
+  },
+  {
+    "nom": "Keni",
+    "stars": "5",
+    "commentaire": "Formalité au top, déblocage rapide",
+    "source": "icone/pages-jaunes.png"
+  }
+]

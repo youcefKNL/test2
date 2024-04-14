@@ -6,7 +6,10 @@ function SectionCreerEntreprise() {
   return (
     <section className="sectionCreerEntreprise">
       <h1>
-        <img src={interogationLogo} alt="" />
+        <img
+          src={interogationLogo}
+          alt="point d'interrogation en relief doré"
+        />
         Comment Créer une Entreprise
       </h1>
       <div className="intro">
@@ -14,7 +17,7 @@ function SectionCreerEntreprise() {
           <div class="right "></div>
           <div class="left "></div>
           <div class="middle zoomer">
-            <img src={ServiceClientIcon3d} alt="" />
+            <img src={ServiceClientIcon3d} alt="avatar d'une femme en 3d" />
           </div>
         </div>
         <p>

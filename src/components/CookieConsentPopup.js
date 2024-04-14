@@ -135,7 +135,8 @@ const CookieConsentPopup = ({
         {customizeCookies ? (
           <div className="modal2">
             <h3>
-              Expérience utilisateur <img src={CheckIcon3d} alt="" />
+              Expérience utilisateur{" "}
+              <img src={CheckIcon3d} alt="check icon en 3d" />
             </h3>
             <p>
               Les cookies servent à améliorer votre expérience. Nous
@@ -182,8 +183,8 @@ const CookieConsentPopup = ({
         ) : (
           <div className="modal1">
             <h3>
-              <img src={CookieIcon3d} alt="" /> Gestion des cookies{" "}
-              <img src={CookieIcon3d} alt="" />
+              <img src={CookieIcon3d} alt="cookies en 3d" /> Gestion des cookies{" "}
+              <img src={CookieIcon3d} alt="cookies en 3d" />
             </h3>
             <div>LEGALIS Cabinet de Conseil</div>
             <br />

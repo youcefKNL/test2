@@ -4,30 +4,31 @@ import EuroIcon from "../assets/emoji3d/euro-3d-icon.png";
 import AnimatedPage from "../components/AnimatedPage";
 const Tarifs = () => {
   return (
-    <AnimatedPage>
-      <section className="tarifs">
+    <section className="tarifs">
+      <AnimatedPage>
         <h1>
-          <img src={EuroIcon} alt="" /> &nbsp; Tarification des services Hors
-          Taxes
+          <img src={EuroIcon} alt="euro doré en 3d" /> &nbsp; Tarification des
+          services Hors Taxes
         </h1>
         <div className="tarifsIntro">
           <div className="wrapperImg">
             <div class="right "></div>
             <div class="left "></div>
             <div class="middle zoomer">
-              <img src={ServiceClientIcon3d} alt="" />
+              <img src={ServiceClientIcon3d} alt="avatar homme en 3d" />
             </div>
           </div>
 
           <p>
             "Nous sommes fiers de proposer les prix les plus compétitifs du
             marché, car nous reconnaissons que certains dossiers peuvent être
-            plus complexes que d'autres. C'est pourquoi nous mentionnons à
-            partir de dans nos tarifs pour refléter la nature variable de
+            plus complexes que d'autres. C'est pourquoi nous mentionnons "à
+            partir de" dans nos tarifs pour refléter la nature variable de
             certaines prestations administratives, car chaque dossier peut
             présenter des besoins spécifiques avec une transparence totale. Nos
             frais administratifs sont strictement basés sur les coûts réels
-            supportés par l'administration publique*, sans aucun gonflement
+            supportés par l'administration publique (Greffe du Tribunal de
+            Commerce, Journal d'annonces légales ...), sans aucun gonflement
             artificiel."
           </p>
         </div>
@@ -37,9 +38,7 @@ const Tarifs = () => {
             <ul>
               <li>
                 <span className="title">Création d’Auto-Entreprise</span>
-                <span className="price">
-                  À partir de 50€ + frais administratifs
-                </span>
+                <span className="price">À partir de 50€</span>
               </li>{" "}
               <li>
                 <span className="title">Création d’EI </span>
@@ -101,6 +100,12 @@ const Tarifs = () => {
             <h2>📑 Modification de statuts</h2>
             <ul>
               <li>
+                <span className="title">Modification d’Auto-Entreprise </span>
+                <span className="price">
+                  À partir de 50€ + frais administratifs
+                </span>
+              </li>
+              <li>
                 <span className="title">Changement de siège social</span>
                 <span className="price">
                   À partir de 99€ + frais administratifs
@@ -140,12 +145,6 @@ const Tarifs = () => {
                   À partir de 69€ + frais administratifs
                 </span>
               </li>
-              <li>
-                <span className="title">Modification d’Auto-Entreprise </span>
-                <span className="price">
-                  À partir de 50€ sans frais administratifs
-                </span>
-              </li>
             </ul>
           </div>
           <div className="Dissolution-liquidation card">
@@ -168,16 +167,39 @@ const Tarifs = () => {
                 À partir de 99€ + frais administratifs
               </span>
             </li>
+
             <li>
-              <span className="title">Radiation d’auto-entreprise</span>
+              <span className="title">Radiation de SAS-SASU</span>
               <span className="price">
-                À partir de 50€ sans frais administratifs
+                À partir de 99€ + frais administratifs
+              </span>
+            </li>
+            <li>
+              <span className="title">Radiation de SARL-EURL</span>
+              <span className="price">
+                À partir de 99€ + frais administratifs
+              </span>
+            </li>
+            <li>
+              <span className="title">Radiation de SCI</span>
+              <span className="price">
+                À partir de 99€ + frais administratifs
+              </span>
+            </li>
+            <li>
+              <span className="title">Radiation d’auto-entrepreneur</span>
+              <span className="price">À partir de 50€</span>
+            </li>
+            <li>
+              <span className="title">Radiation commerçant</span>
+              <span className="price">
+                À partir de 50€ + frais administratifs
               </span>
             </li>
           </div>
         </div>
-      </section>
-    </AnimatedPage>
+      </AnimatedPage>
+    </section>
   );
 };
 

@@ -21,6 +21,7 @@ import Cookie from "./components/Cookie";
 import { AnimatePresence } from "framer-motion";
 import Page404 from "./pages/Page404";
 import ContactUs from "./pages/ContactUs";
+import Avis from "./pages/Avis";
 
 function App() {
   const location = useLocation();
@@ -30,11 +31,11 @@ function App() {
       <ScrollToTop />
       <MouseEffect />
       <Navigation />
-      <Cookie />
 
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
+          <Route path="/avis" element={<Avis />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact+us" element={<ContactUs />} />
           <Route path="/conditions+generales" element={<ConditionCGV />} />
@@ -61,6 +62,7 @@ function App() {
         </Routes>
       </AnimatePresence>
 
+      <Cookie />
       <Footer />
     </>
   );

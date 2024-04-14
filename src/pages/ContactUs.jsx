@@ -1,6 +1,6 @@
 import React from "react";
-
-import Form from "../components/Form";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+// import Form from "../components/Form";
 
 const ContactUs = () => {
   /*******************************************************************/
@@ -14,42 +14,45 @@ const ContactUs = () => {
       portableAvecEspaces += " ";
     }
   }
+
+  const handleCopy = () => {
+    alert("📝 Contact copié avec succès 👍! 📝");
+  };
   /*******************************************************************/
   return (
-    <div className="contact">
+    <section className="contact">
       <ul className="contact-grid">
         <li className="WhatsApp">
-          <p>
-            Privilégier WhatsApp comme moyen de communication, Envoyez-nous des
-            messages écris, vocaux ou appelez-nous!
-          </p>
-          <button>
-            {" "}
-            <i className="fa-brands fa-whatsapp "></i>Nous contacter <br />
-            {portableAvecEspaces}
-          </button>
+          🚀 WhatsApp 🚀
+          <CopyToClipboard text={portableAvecEspaces} onCopy={handleCopy}>
+            <button>
+              <i className="fa-brands fa-whatsapp "></i> {portableAvecEspaces}
+            </button>
+          </CopyToClipboard>
         </li>
         <li className="phoneContact">
-          Telephone
-          <button>
-            {" "}
-            <i className="fa-solid fa-phone "></i>Nous contacter <br />
-            {portableAvecEspaces}
-          </button>
+          📱 Telephone 📱
+          <CopyToClipboard text={portableAvecEspaces} onCopy={handleCopy}>
+            <button>
+              <i className="fa-solid fa-phone "></i>
+              {portableAvecEspaces}
+            </button>
+          </CopyToClipboard>
         </li>
         <li className="mailContact">
-          Mail
-          <button>
-            {" "}
-            <i className="fa-regular fa-envelope"></i>Nous contacter <br />{" "}
-            {email}
-          </button>
+          📧 Mail 📧
+          <CopyToClipboard text={email} onCopy={handleCopy}>
+            <button>
+              <i className="fa-regular fa-envelope"></i>
+              {email}
+            </button>
+          </CopyToClipboard>
         </li>
-        <li>
+        {/* <li>
           <Form />
-        </li>
+        </li> */}
       </ul>
-    </div>
+    </section>
   );
 };
 

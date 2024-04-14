@@ -12,7 +12,7 @@ const CookieIcon = ({ showPopup, setShowPopup }) => {
         onClick={handleCookieClick}
         title="Personnaliser les préférences de cookies"
       >
-        <img src={CookieIcon3d} alt="" />
+        <img src={CookieIcon3d} alt="cookies en 3d" />
       </button>
     </section>
   );

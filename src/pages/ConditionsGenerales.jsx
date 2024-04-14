@@ -9,7 +9,8 @@ const ConditionCGV = () => {
   return (
     <section className="conditionsGenerales">
       <h1>
-        <img src={AccordLogo} alt="" /> &nbsp; conditions generales
+        <img src={AccordLogo} alt="geste de la main pour accord" /> &nbsp;
+        conditions generales
       </h1>
       <p>
         Toute commande d’une prestation implique de plein droit l’acceptation

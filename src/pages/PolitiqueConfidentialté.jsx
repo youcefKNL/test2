@@ -8,7 +8,8 @@ const PolitiqueDeConfidentialite = () => {
   return (
     <section className="politiqueDeConfidentialite">
       <h1>
-        <img src={AccordLogo} alt="" /> &nbsp; Politique de confidentialité
+        <img src={AccordLogo} alt="geste de la main bon pour accord" /> &nbsp;
+        Politique de confidentialité
       </h1>
       <div className="intro">
         Chez Legalis, nous attachons une grande importance au respect de votre

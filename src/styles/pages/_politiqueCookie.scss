@@ -14,8 +14,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1000px) {
+      font-size: 1em;
+    }
     img {
-      width: 70px;
+      max-width: 50px;
     }
   }
   a {

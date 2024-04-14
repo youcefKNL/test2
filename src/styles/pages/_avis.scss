@@ -1,0 +1,135 @@
+.avis {
+  //   border: 2px solid red;
+  padding: 0 12px;
+  h2 {
+    margin: 5% 0 0 0;
+    text-align: center;
+    br + span {
+      font-size: 1.5em;
+      @media (max-width: 1000px) {
+        font-size: 1.2em;
+      }
+    }
+    @media (max-width: 1000px) {
+      font-size: 1em;
+    }
+  }
+  .needYou {
+    display: block;
+    img {
+      width: 15%;
+      min-width: 200px;
+    }
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    margin-bottom: 5%;
+    @media (max-width: 1000px) {
+      font-size: 0.8em;
+    }
+  }
+  .vertical-marquee {
+    // border: 1px solid salmon;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (max-width: 1000px) {
+      padding: 0;
+    }
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .vertical-marquee__blured--top {
+      top: 0;
+    }
+    .vertical-marquee__blured--top::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(
+        to bottom,
+        white,
+        rgba(255, 255, 255, 0)
+      ); /* Dégradé transparent à blanc */
+      filter: blur(10%); /* Appliquer l'effet de flou */
+      z-index: 2;
+    }
+    .vertical-marquee__blured--top::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 20%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      ); /* Dégradé de blanc à transparent */
+
+      z-index: 2;
+    }
+    .vertical-marquee__slider {
+      animation: vertical-marquee 20.4s linear infinite;
+
+      @keyframes vertical-marquee {
+        0% {
+          transform: translateY(50%); /* Commence à la moitié de la hauteur */
+        }
+        100% {
+          transform: translateY(
+            -100%
+          ); /* Décale le conteneur vers le haut d'une hauteur de commentaire */
+        }
+      }
+
+      .vertical-marquee__panel {
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        .vertical-marquee__card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          padding: 20px;
+          border: 2px solid $color-GOLD;
+          border-radius: 10px;
+          .vertical-marquee__card-text {
+            color: $color-BLACK;
+            line-height: 1.4;
+            font-size: 18px;
+            margin-bottom: 24px;
+          }
+          .vertical-marquee__quotes {
+            color: goldenrod;
+          }
+          .vertical-marquee_card-author {
+            // margin-top: auto;
+            font-style: italic;
+          }
+          .vertical-marquee_card-sources {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+              width: 30%;
+              max-width: 80px;
+            }
+            i {
+              color: $color-GOLD;
+              padding-right: 5px;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

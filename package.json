@@ -12,15 +12,18 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "copy-to-clipboard": "^3.3.3",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.4",
     "js-cookie": "^3.0.5",
     "react": "^18.2.0",
     "react-confetti": "^6.1.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
+    "react-snap": "^1.13.1",
     "react-use": "^17.4.0",
     "sass": "^1.66.0"
   },
@@ -28,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [

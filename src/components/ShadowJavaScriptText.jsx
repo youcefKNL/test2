@@ -11,7 +11,7 @@ function ShadowHtmlText() {
       "color: black; background: gold; font-size: 12px; padding: 8px;"
     );
     console.log(
-      "%cSi vous avez besoin d'aide pour donner vie à vos projets, contactez-nous à [votre email ou site Web].",
+      "%cSi vous avez besoin d'aide pour donner vie à vos projets, contactez-nous au 06.01.31.21.52.",
       "color: gold; background: black; font-size: 12px; padding: 8px;"
     );
     console.log(

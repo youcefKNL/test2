@@ -8,7 +8,8 @@ const PolitiqueCookies = () => {
     <section className="politiqueCookies">
       <h1>
         {" "}
-        <img src={AccordLogo} alt="" /> &nbsp; POLITIQUE EN MATIÈRE DE COOKIES
+        <img src={AccordLogo} alt="geste de la main bon pour accord" /> &nbsp;
+        POLITIQUE EN MATIÈRE DE COOKIES
       </h1>
       <p>
         La présente politique, la "Politique en matière de cookies", a pour

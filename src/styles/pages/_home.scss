@@ -5,17 +5,17 @@ $icon-close: url("../../assets/img/ideogram\ \(33\).jpeg");
 .home {
   user-select: none;
   padding: 5% 5%;
+  h1 {
+    font-size: 1.3em;
+    line-height: 1;
+    margin-bottom: 1%;
+    font-family: $font-1;
+    text-align: center;
+  }
   .intro {
     border: 1px solid $color-GOLD;
     border-radius: 8px;
-    padding: 10px 10px 0 10px;
-    h1 {
-      font-size: 1.3em;
-      line-height: 1;
-      margin-bottom: 1%;
-      font-family: $font-1;
-      text-align: center;
-    }
+    // padding: 1px 10px 1px 10px;
     .introContent {
       display: flex;
       align-items: center;

@@ -7,14 +7,17 @@ import AnimatedPage from "../components/AnimatedPage";
 
 const Page404 = () => {
   return (
-    <AnimatedPage>
-      <section className="pageNotFound">
+    <section className="pageNotFound">
+      <AnimatedPage>
         <div className="left">
-          <img src={Image3} alt="" />
+          <img
+            src={Image3}
+            alt="un homme et une femme qui regarde d'un air perplexe chez LEGALIS Cabinet de Conseil"
+          />
         </div>
         <div className="right">
           <div className="imgConatainer">
-            <img src={Image} alt="" />
+            <img src={Image} alt="chiffre 404 en relief doré" />
           </div>
           <p>
             Pour le moment, il n'y a pas grand chose ici. <br /> Un tour sur
@@ -29,8 +32,8 @@ const Page404 = () => {
             &nbsp;pourrait vous aider à retrouver votre route.
           </p>
         </div>
-      </section>
-    </AnimatedPage>
+      </AnimatedPage>
+    </section>
   );
 };
 

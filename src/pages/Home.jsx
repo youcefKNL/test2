@@ -8,15 +8,18 @@ import ServiceClientLegalis from "../assets/img/ideogram__6_-removebg-preview.pn
 
 const Home = () => {
   return (
-    <AnimatedPage>
-      <section className="home">
+    <section className="home">
+      <AnimatedPage>
+        <h1>
+          Simplifiez Vos Démarches Administratives avec Legalis : Expertise et
+          Accompagnement Intégral, Même pour les Dossiers les Plus Complexes.
+        </h1>
         <div className="intro">
-          <h1>
-            Simplifiez Vos Démarches Administratives avec Legalis : Expertise et
-            Accompagnement Intégral, Même pour les Dossiers les Plus Complexes.
-          </h1>
           <div className="introContent">
-            <img src={ServiceClientLegalis} alt="" />
+            <img
+              src={ServiceClientLegalis}
+              alt="un homme et une femme du service client LEGALIS Cabinet de Conseil"
+            />
             <p>
               Chez Legalis, nous sommes bien plus qu'un simple cabinet de
               conseil. Notre mission est de vous offrir un accompagnement
@@ -68,8 +71,8 @@ const Home = () => {
             </div>
           </NavLink>
         </div>
-      </section>
-    </AnimatedPage>
+      </AnimatedPage>
+    </section>
   );
 };
 

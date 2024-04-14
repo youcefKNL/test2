@@ -1,3 +1,29 @@
 # https://www.robotstxt.org/robotstxt.html
+
+# Autoriser l'indexation du site entier :
+
 User-agent: *
-Disallow:
+Allow: /
+
+
+# Empêcher l'indexation de certaines pages :
+
+User-agent: *
+Disallow: /example.html
+
+
+# Exclure certains répertoires :
+
+User-agent: *
+Disallow: /admin/exemple
+
+
+# Indication de la localisation de la sitemap :
+
+Sitemap: https://www.cabinetlegalis.fr/sitemap.xml
+
+
+#Balise de vérification de l'identité du propriétaire :
+
+User-agent: Googlebot
+Allow: /path/to/your-verification-file.html

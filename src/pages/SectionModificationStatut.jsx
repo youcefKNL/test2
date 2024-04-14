@@ -6,7 +6,7 @@ const SectionModificationStatut = () => {
   return (
     <section className="sectionModifierEntreprise">
       <h1>
-        <img src={BlocNoteLogo} alt="" />
+        <img src={BlocNoteLogo} alt="bloc note doré en 3d" />
         Modifier les Statuts de Votre Entreprise{" "}
       </h1>
 
@@ -15,7 +15,7 @@ const SectionModificationStatut = () => {
           <div class="right "></div>
           <div class="left "></div>
           <div class="middle zoomer">
-            <img src={ServiceClientIcon3d} alt="" />
+            <img src={ServiceClientIcon3d} alt="avatar d'une femme en 3d" />
           </div>
         </div>
         <p>

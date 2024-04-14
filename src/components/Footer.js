@@ -140,7 +140,7 @@ const Footer = () => {
         <p>
           -Cabinet de conseil LEGALIS SASU- © 2023. Tous droits réservés.{" "}
           <span className="poweredLegalis">
-            powered by <img src={Logo} alt="" />
+            powered by <img src={Logo} alt="LEGALIS Cabinet de Conseil" />
           </span>
         </p>
       </div>

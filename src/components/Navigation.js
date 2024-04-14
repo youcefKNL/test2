@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo-Legalis2-removebg-preview.png";
 
 const Navigation = () => {
+  const email = process.env.REACT_APP_EMAIL;
   const portable = process.env.REACT_APP_PORTABLE;
   const portableSansPremierChiffre = portable.slice(1);
 
@@ -40,12 +41,12 @@ const Navigation = () => {
               </li>
             </NavLink>
             <NavLink
-              to="/blog"
+              to="/avis"
               className={(nav) => (nav.isActive ? "nav-active" : null)}
-              title="Blog"
+              title="Avis"
             >
               <li>
-                <p>Blog</p>
+                <p>Avis</p>
               </li>
             </NavLink>
 
@@ -71,8 +72,9 @@ const Navigation = () => {
         <div className="headerRight">
           <ul className="contact">
             <p>
-              💬 Nous contacter : <br />
-              🗂️ Assistance 7j/7 24h/24
+              💬 Nous contacter :
+              {/* <br />
+              🗂️ Assistance 7j/7 24h/24 */}
             </p>
             <li>
               <a href={`tel:${portable}`} alt="Appeler">
@@ -81,10 +83,7 @@ const Navigation = () => {
             </li>
 
             <li>
-              <a
-                href="mailto:legal_formalite@outlook.fr"
-                alt="Envoyer un email"
-              >
+              <a href={`mailto:${email}`} alt="Envoyer un email">
                 <i className="fa-regular fa-envelope"></i>
               </a>
             </li>
